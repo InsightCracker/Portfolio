@@ -38,7 +38,7 @@ const LandingContent = () => {
         }}>
           <Typewriter 
             options={{
-              strings: ['Michael Oladimeji', 'Codeboyfriend'],
+              strings: ['Michael Oladimeji', 'InsightCracker'],
               autoStart: true,
               loop: true
             }}
@@ -46,7 +46,7 @@ const LandingContent = () => {
         </Heading>
         <Text sx={{
           fontSize: '.8rem'
-        }}>A young Frontend Developer with 2 years experience.</Text>
+        }}>I'm a data analyst, passionate about turning numbers into insights that drive business growth.</Text>
 
         <Box sx={{
             margin: '1rem 0'
@@ -58,16 +58,16 @@ const LandingContent = () => {
                 fontSize: '1.2rem',
                 display: "flex"
             }}>
-                <a href={"http://www.twitter.com/codeboyfriend"}>
+                <a href={"http://www.twitter.com/InsightCracker"}>
                   <Text marginRight={'.5rem'}><FaTwitter /></Text>
                 </a>
-                <a href={"http://www.github.com/codeboyfriend"}>
+                <a href={"http://www.github.com/InsightCracker"}>
                   <Text marginRight={'.5rem'}><FaGithub /></Text>
                 </a>
-                <a href={"http://www.instagram.com/code_boyfriend"}>
+                <a href={"http://www.instagram.com/mightymykel"}>
                   <Text marginRight={'.5rem'}><FaInstagram /></Text>
                 </a>
-                <a href={"https://wa.me/+2349036190420"}>
+                <a href={"https://www.linkedin.com/in/InsightCracker"}>
                   <Text marginRight={'.5rem'}><FaLinkedinIn /></Text>
                 </a>
                 <a href={"https://wa.me/+2349036190420"}>
@@ -88,10 +88,12 @@ const LandingContent = () => {
               sx={buttonStyle}
             >View Work</Text>
             </a>
-            <Text
-              border={"1px solid #fff"} 
-              sx={buttonStyle}
-            >Hire Me</Text>
+            <a href="#contact">
+              <Text
+                border={"1px solid #fff"} 
+                sx={buttonStyle}
+              >Hire Me</Text>
+            </a>
         </Box>
     </Box>
   )

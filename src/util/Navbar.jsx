@@ -32,7 +32,7 @@ const Navbar = () => {
           fontSize: '1.5rem',
           fontWeight: '500',
           paddingTop: '10px'
-        }} className='code'>codeboyfriend</Text>
+        }} className='code'>InsightCracker</Text>
       </Box>
 
       <Box className="large_nav">

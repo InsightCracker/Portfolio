@@ -39,7 +39,7 @@ const Portfolio = () => {
         <Work />
 
         <Box>
-          <a href={"http://www.github.com/codeboyfriend"}>
+          <a href={"http://www.github.com/InsightCracker"}>
             <Text sx={buttonStyle} marginRight={'.5rem'}>View More</Text>
           </a>
         </Box>

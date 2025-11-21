@@ -17,8 +17,8 @@ import { Pagination } from 'swiper';
 import 'swiper/css';
 import "swiper/css/pagination";
 
-import kipnote from "../assets/image/kipnote.png";
-import kwiz from "../assets/image/kwiz.png";
+import uber from "../assets/image/uber.png";
+import spotify from "../assets/image/spotify.png";
 import koiin from "../assets/image/koiin.png";
 import lively from "../assets/image/lively.png";
 import sneeaker from "../assets/image/sneeaker.png";
@@ -57,16 +57,28 @@ const Work = () => {
         }}
     >
         <SwiperSlide>
-            <a href="https://kipNote.netlify.app">
+            <a href="https://github.com/InsightCracker/Uber-Dataset-Analysis">
                 <Box className="box">
-                    <img src={kipnote} alt="kipNote" />
+                    <img src={uber} alt="uber-dataset-analysis" />
+                </Box>
+                <Box>
+
                 </Box>
             </a>
         </SwiperSlide>
         <SwiperSlide>
-            <a href="https://sneeakers.netlify.app">
+            <a href="https://github.com/InsightCracker/-Spotify-Data-Analysis-Power-BI-Case-Study">
                 <Box className="box">
-                    <img src={sneeaker} alt="sneeakers" />
+                    <img src={spotify} alt="Spotify-Data-Analysis-Power-BI-Case-Study" />
+                </Box>
+                <Box>
+                    📌 Overview
+                    This case study analyzes global Spotify track data using Power BI to uncover patterns in song popularity, artist performance, and listening behavior. The dashboard provides a dynamic and interactive view of the dataset, helping identify what makes a track popular and how user preferences evolve across time, genres, and artists.
+
+                    🎯 Objective
+                    Understand the key factors influencing track popularity.
+                    Identify top-performing artists and songs.
+                    Provide recommendations for artists, producers, and marketing strategists.
                 </Box>
             </a>
         </SwiperSlide>

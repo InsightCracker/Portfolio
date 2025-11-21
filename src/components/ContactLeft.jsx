@@ -31,7 +31,7 @@ const ContactLeft = () => {
         }}>
             <li><span className="icon"><FaPhoneSquareAlt /></span> +234 903 6190 420</li>
             <li><span className="icon"><FaEnvelope /></span> oladimejimichael224@gmail.com</li>
-            <li><span className="icon"><FaLocationArrow /></span> Ibadan, Oyo State</li>
+            <li><span className="icon"><FaLocationArrow /></span> Lagos, Nigeria</li>
         </ul>
     </Box>
   )

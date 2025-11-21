@@ -2,7 +2,7 @@ import {
     Box,
     Text 
 } from "@chakra-ui/react";
-import cv from '../assets/doc/CV.pdf';
+import resume from '../assets/doc/CV.pdf';
 
 const Resume = () => {
     const textStyle = {
@@ -39,16 +39,16 @@ const Resume = () => {
             fontSize: '.9rem',
             margin: '1rem 0'
         }}>
-            Courteous and ethusiatic. I am interested in IT and anything in its orbit. I recently began to be fascinated by web programming e.g developing apps and building websites. I have worked with senior devs on building different projects. I gained experience of working in this area.
-            As this area complements my studies, I keen to gain more experience in the field. For this reasons. I am looking for a company willing to offer me a placement among their developers. In return, I would offer my full commitment and be pleasant and friendly addiction to your team.
+            Courteous, enthusiastic, and highly motivated, I am passionate about technology and the many ways it transforms everyday life. Over time, I developed a strong interest in data analytics: cleaning data, uncovering insights, and building dashboards that solve real problems. I have collaborated on several projects where I worked closely with experienced analysts and developers, gaining hands-on experience and strengthening my technical skills.
+            As data analytics aligns perfectly with my academic background and career goals, I am eager to gain even more industry experience. I am currently seeking an opportunity with an organization that is willing to support my growth as an analyst. In return, I offer full commitment, a strong work ethic, and a positive, collaborative attitude that contributes meaningfully to the team.
         </Text>
 
         <Box>
-            <a href={cv} download rel="noopener noreferrer" target={'_blank'}>
+            <a href={resume} download rel="noopener noreferrer" target={'_blank'}>
                 <Text data-aos="fade-in" data-aos-delay='300'
                     sx={buttonStyle} 
                     width={'7rem'}
-                >Download CV</Text>
+                >Download Resume</Text>
             </a>
         </Box>
     </Box>

@@ -2,7 +2,7 @@ import {
     Box,
     Text 
 } from "@chakra-ui/react";
-import resume from '../assets/doc/CV.pdf';
+import resume from '../assets/doc/RESUME.pdf';
 
 const Resume = () => {
     const textStyle = {

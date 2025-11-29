@@ -48,7 +48,7 @@ const Resume = () => {
             <a href={cv} download rel="noopener noreferrer" target={'_blank'}>
                 <Text data-aos="fade-in" data-aos-delay='300'
                     sx={buttonStyle} 
-                    width={'7rem'}
+                    width={'8rem'}
                 >Download Resume</Text>
             </a>
         </Box>

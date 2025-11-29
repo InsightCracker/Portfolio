@@ -118,63 +118,11 @@ const AboutContent = () => {
                                 sx={textStyle}>Other Skills</Text>
 
                             <Box data-aos="fade-left" className="badges">
-                                <Box>
-                                    <div style={{
-                                        margin: '.5rem 0'
-                                    }}>
-                                        <img src="https://img.shields.io/badge/-MsWord-222222?style=flat&logo=microsoftword&logoColor=61DAFB" alt="MsWord" />
-                                    </div>
-                                </Box>
-                                    <img src="https://img.shields.io/badge/-HTML5-ffffff?style=flat&logo=html5" alt="html" />
-                                    <img src="https://img.shields.io/badge/-CSS3-222222?style=flat&logo=css3&logoColor=61DAFB" alt="css" />
-                                    <img src="https://img.shields.io/badge/-VSCode-222222?style=flat&logo=visualstudiocode&logoColor=61DAFB" alt="vscode" />
-                                <Box>
-                                <div style={{
-                                        margin: '.5rem 0'
-                                    }}>
-                                        <img src="https://img.shields.io/badge/-Photoshop-222222?style=flat&logo=adobephotoshop&logoColor=61DAFB" alt="Photoshop" />
-                                    </div>
-                                </Box>
-                            </Box>
-                        </Box>
-                    </Box>
-                </Box>
-            </SwiperSlide>
-
-            <SwiperSlide>
-                <Box sx={{
-                width: '100%',
-                h: '100%',
-                alignItems: 'center',
-                paddingBottom: '30px'
-            }} className="swiper_box">
-                    <AboutImageIV />
-                    <Box>
-                        <Text className="greeting bgStyle" sx={{
-                            width: '7rem',
-                            fontSize: '.9rem',
-                            textTransform: 'uppercase',
-                            bgColor: '#ca0707',
-                            color: '#fff',
-                            padding: '.5rem',
-                            textAlign: 'center',
-                            marginBottom: '.5rem'
-                        }}>More</Text>
-
-                        <Box data-aos="fade-left" className="info">
-                            <Box>
-                                <Text sx={heading}><FaGlobe /></Text>
-                                <Text sx={text}>Oladimeji Michael</Text>
-                            </Box>
-
-                            <Box>
-                                <Text sx={heading}><FaEnvelope /></Text>
-                                <Text sx={text}>oladimejimichael224@gmail.com</Text>
-                            </Box>
-
-                            <Box>
-                                <Text sx={heading}><FaPhoneAlt /></Text>
-                                <Text sx={text}>+234 903 6190 420</Text>
+                                <img src="https://img.shields.io/badge/-MsWord-222222?style=flat&logo=microsoftword&logoColor=61DAFB" alt="MsWord" />
+                                <img src="https://img.shields.io/badge/-HTML5-ffffff?style=flat&logo=html5" alt="html" />
+                                <img src="https://img.shields.io/badge/-CSS3-222222?style=flat&logo=css3&logoColor=61DAFB" alt="css" />
+                                <img src="https://img.shields.io/badge/-VSCode-222222?style=flat&logo=visualstudiocode&logoColor=61DAFB" alt="vscode" />
+                                <img src="https://img.shields.io/badge/-Photoshop-222222?style=flat&logo=adobephotoshop&logoColor=61DAFB" alt="Photoshop" />
                             </Box>
                         </Box>
                     </Box>

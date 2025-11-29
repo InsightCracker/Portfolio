@@ -19,10 +19,7 @@ import "swiper/css/pagination";
 
 import uber from "../assets/image/uber.png";
 import spotify from "../assets/image/spotify.png";
-import koiin from "../assets/image/koiin.png";
-import lively from "../assets/image/lively.png";
-import sneeaker from "../assets/image/sneeaker.png";
-import nysc from "../assets/image/nysc.png";
+
 
 const Work = () => {
   return (
@@ -80,34 +77,6 @@ const Work = () => {
                     Identify top-performing artists and songs.
                     Provide recommendations for artists, producers, and marketing strategists.
                 </Box>
-            </a>
-        </SwiperSlide>
-        <SwiperSlide>
-            <a href="https://kwiiz.netlify.app">
-                <Box className="box">
-                    <img src={kwiz} alt="kwiiz" />
-                </Box>
-            </a>
-        </SwiperSlide>
-        <SwiperSlide>
-            <a href="https://koiin.netlify.app">
-                <Box className="box">
-                    <img src={koiin} alt="koiin" />
-                </Box>
-            </a>
-        </SwiperSlide>
-        <SwiperSlide>
-            <a href="https://live-ly.netlify.app">
-                <Box className="box">
-                    <img src={lively} alt="lively" />
-                </Box>
-            </a>
-        </SwiperSlide>
-        <SwiperSlide>
-            <a href="https://nysc-portal.netlify.app">
-                <Box className="box">
-                    <img src={nysc} alt="nysc" />
-                </Box>  
             </a>
         </SwiperSlide>
     </Swiper>

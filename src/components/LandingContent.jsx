@@ -32,7 +32,7 @@ const LandingContent = () => {
           textAlign: 'center'
         }}>Hello, I am </Text>
         <Heading className="name" sx={{
-          fontSize: '2.2rem',
+          fontSize: '2rem',
           wordSpacing: '.3rem',
           margin: '.5rem 0'
         }}>

@@ -19,6 +19,15 @@ import "swiper/css/pagination";
 
 import uber from "../assets/image/uber.png";
 import spotify from "../assets/image/spotify.png";
+import sales from "../assets/image/sales.png";
+import hr from "../assets/image/hr.png";
+
+const buttonStyle = {
+    width: '5rem',
+    cursor: 'pointer',
+    border: '1px solid red',
+    textAlign: 'center',
+  }
 
 
 const Work = () => {
@@ -53,29 +62,137 @@ const Work = () => {
             padding: '0'
         }}
     >
-        <SwiperSlide>
-            <a href="https://github.com/InsightCracker/Uber-Dataset-Analysis">
-                <Box className="box">
-                    <img src={uber} alt="uber-dataset-analysis" />
-                </Box>
-                <Box>
 
+        <SwiperSlide>
+            <a href="https://github.com/InsightCracker/-Spotify-Data-Analysis-Power-BI-Case-Study">
+                <Box className="box">
+                    <img src={sales} alt="E-Commerce Customer Behavior and Sales Dataset" />
+                </Box>
+                <Box sx={{
+                    fontSize: '.8rem',
+                    lineHeight: '1.3rem',
+                    textAlign: 'justify',
+                    paddingTop: '.5rem'
+                    }}>
+                    <h4>🚀🛒 E-Commerce Customer Behavior and Sales Dataset🚀 <br /></h4>
+                    📊 Executive Summary<br />
+                    This report presents an overview of e-commerce customer behavior and sales performance for the 2023–2024 period, analyzed using SQL and Power BI. Total sales amounted to ₺4.92 million from 5,000 customers, with an average order value of ₺983.11. Electronics, Home & Garden, and Sports were the top-performing categories, while Books and Food recorded the lowest sales. Istanbul led all cities with ₺1.33 million in revenue, followed by Ankara and Izmir.<br />
+
+                    📝 Business Problem<br />
+                    The e-commerce company faced challenges in understanding customer purchasing behavior, sales performance, and revenue distribution across product categories and locations. The absence of a centralized analytical system limited management’s ability to track key performance indicators (KPIs), identify high-performing segments, and evaluate the effectiveness of discounts and marketing strategies. <br />
+
+                    Additionally, decision-making was hindered by fragmented data sources and a lack of real-time visibility into customer trends, payment preferences, and delivery performance. To address these issues, a data-driven analytical dashboard was developed using Power BI to integrate sales, demographic, and operational data enabling actionable insights for improving sales strategies, customer retention, and overall business performance. <br />
+                    <a href="https://github.com/InsightCracker/-Spotify-Data-Analysis-Power-BI-Case-Study">
+                        <Text sx={buttonStyle} marginRight={'.5rem'}>Read More</Text>
+                    </a>
                 </Box>
             </a>
         </SwiperSlide>
+
+        <SwiperSlide>
+            <a href="https://github.com/InsightCracker/Uber-Dataset-Analysis">
+                <Box className="box">
+                    <img src={hr} alt="HR ANALYTICS REPORT – ABSENTEEISM INSIGHTS" />
+                </Box>
+                <Box sx={{
+                    fontSize: '.8rem',
+                    lineHeight: '1.3rem',
+                    textAlign: 'justify',
+                    paddingTop: '.5rem'
+                    }}>
+                    <h4>🚀📘 HR ANALYTICS REPORT – ABSENTEEISM INSIGHTS🚀 <br /></h4>
+                    📊 Executive Summary<br />
+                    This HR Absenteeism Analysis provides a comprehensive assessment of employee absence patterns using multiple behavioral, demographic, and operational indicators. The findings reveal that absenteeism is heavily influenced by health-related factors, commute challenges, age groups, and work tenure, with significant seasonal and monthly fluctuations. <br />
+                    🔍Key highlights<br />
+                    Total Absenteeism Hours: 5,100+ hours<br />
+                    Total Absentees: 737<br />
+                    Average Absence Hours per Employee: 6.95 hours<br />
+                    Average Employee Age: 36.4 years<br />
+                    Peak absenteeism occurs in February, March, and July.<br />
+                    The 30–39 age group accounts for the highest number of absences.<br />
+                    Medical consultations and musculoskeletal issues are the leading reasons for absence.<br />
+                    Employees with longer service (11–19 years) contribute significantly more hours of absence.<br />
+
+                    🧾Conclusion<br />
+                    This analysis provides a detailed understanding of absenteeism drivers related to health, lifestyle, commute, demographics, service time, and seasonal factors. Using these insights, HR can implement strategic interventions to reduce absenteeism, improve workforce productivity, and enhance employee well-being. <br />
+
+                    <a href="https://github.com/InsightCracker/-Spotify-Data-Analysis-Power-BI-Case-Study">
+                        <Text sx={buttonStyle} marginRight={'.5rem'}>Read More</Text>
+                    </a>
+                </Box>
+            </a>
+        </SwiperSlide>
+        
         <SwiperSlide>
             <a href="https://github.com/InsightCracker/-Spotify-Data-Analysis-Power-BI-Case-Study">
                 <Box className="box">
                     <img src={spotify} alt="Spotify-Data-Analysis-Power-BI-Case-Study" />
                 </Box>
-                <Box>
-                    📌 Overview
-                    This case study analyzes global Spotify track data using Power BI to uncover patterns in song popularity, artist performance, and listening behavior. The dashboard provides a dynamic and interactive view of the dataset, helping identify what makes a track popular and how user preferences evolve across time, genres, and artists.
+                <Box sx={{
+                    fontSize: '.8rem',
+                    lineHeight: '1.3rem',
+                    textAlign: 'justify',
+                    paddingTop: '.5rem'
+                    }}>
+                    <h4>🚀🎧SPOTIFY DATA ANALYSIS – POWER BI CASE STUDY🚀 <br /></h4>
+                    📌 Overview<br />
+                    This case study analyzes global Spotify track data using Power BI to uncover patterns in song popularity, artist performance, and listening behavior. The dashboard provides a dynamic and interactive view of the dataset, helping identify what makes a track popular and how user preferences evolve across time, genres, and artists.<br />
 
-                    🎯 Objective
-                    Understand the key factors influencing track popularity.
-                    Identify top-performing artists and songs.
-                    Provide recommendations for artists, producers, and marketing strategists.
+                    🎯 Objective<br />
+                    Understand the key factors influencing track popularity. <br />
+                    Identify top-performing artists and songs. <br />
+                    Provide recommendations for artists, producers, and marketing strategists.<br />
+
+                    🛠️ Tools & Techniques<br />
+                    <ul>
+                    <li>Power BI: data modeling, DAX calculations, visualizations, and interactive dashboards.</li>
+                    <li>Excel: data cleaning and initial transformation.</li>
+                    <li>DAX Measures: popularity averages, explicit vs. non-explicit counts, feature scoring metrics.</li>
+                    <li>Data Wrangling: duplicate removal, null handling, and feature standardization.</li>
+                    </ul> <a href="https://github.com/InsightCracker/-Spotify-Data-Analysis-Power-BI-Case-Study">
+                        <Text sx={buttonStyle} marginRight={'.5rem'}>Read More</Text>
+                    </a>
+                </Box>
+            </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+            <a href="https://github.com/InsightCracker/-Spotify-Data-Analysis-Power-BI-Case-Study">
+                <Box className="box">
+                    <img src={uber} alt="Operational Performance Overview – Ride Data" />
+                </Box>
+                <Box sx={{
+                    fontSize: '.8rem',
+                    lineHeight: '1.3rem',
+                    textAlign: 'justify',
+                    paddingTop: '.5rem'
+                    }}>
+                    <h4>🚀Operational Performance Overview – Ride Data<br /></h4>
+                    📌 Overview<br />
+                    The dashboard visualizes data from Uber Transport Service, covering key performance indicators (KPIs) such as:
+
+                    Total Revenue: $52M<br />
+                    Total Customers: 104K<br />
+                    Total Vehicle: 150K<br />
+                    Total Distance: 3M<br />
+                    Completed Booking: 93K<br />
+                    Lost Booking: 57K<br />
+                    Average Distance: 24.64<br />
+                    Average Customer Rating: 4.40<br />
+                    Average Drivers Rating: 4.23<br />
+
+                    🎯 Objective<br />
+                    🔍 KEY INSIGHT <br />
+                    The total revenue generated was approximately $52 million. <br />
+                    Uber Auto recorded the highest revenue of $13 million, representing 25% of total revenue, while Uber XL had the lowest revenue at $2 million which is just 3.8%.<br />
+                    March emerged as the best-performing month in terms of revenue.<br />
+                    The lowest number of bookings was recorded in February, with 11,537 total bookings.<br />
+                    UPI accounted for 45.03% of all payment transactions.<br />
+                    The distance covered remained relatively consistent across all months, showing little variation.<br />
+                    
+                    <a href="https://github.com/InsightCracker/-Spotify-Data-Analysis-Power-BI-Case-Study">
+                        <Text sx={buttonStyle} marginRight={'.5rem'}>Read More</Text>
+                    </a>
                 </Box>
             </a>
         </SwiperSlide>

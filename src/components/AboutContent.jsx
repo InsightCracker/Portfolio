@@ -75,7 +75,8 @@ const AboutContent = () => {
 
                         <Text data-aos="fade-left" className="write_up" sx={{
                             fontSize: '.8rem',
-                            lineHeight: '1.3rem'
+                            lineHeight: '1.3rem',
+                            textAlign: 'justify'
                         }}>Hi, thanks for stopping by! I’m Michael Oladimeji, a Data Analyst with strong problem-solving skills. I take messy data and turn it into insights people can actually use and have worked on building dashboards, reports, and data-driven solutions using modern analytics tools and techniques.<br />
                          If you're looking for a detail-driven and analytical data professional to bring clarity to your data and support your next project. I might just be the guy you need.</Text>
                     </Box>

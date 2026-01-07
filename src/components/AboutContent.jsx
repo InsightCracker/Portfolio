@@ -23,10 +23,8 @@ import { Pagination } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 
-import AboutImage from "./AboutImage";
 import AboutImageII from "./AboutImageII";
 import AboutImageIII from "./AboutImageIII";
-import AboutImageIV from "./AboutImageIV";
 
 
 const AboutContent = () => {

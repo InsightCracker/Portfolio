@@ -64,32 +64,44 @@ const Work = () => {
     >
 
         <SwiperSlide>
-            <a href="https://github.com/InsightCracker/E-Commerce-Customer-Behavior-and-Sales-Dataset">
-                <Box className="box">
-                    <img src={sales} alt="E-Commerce Customer Behavior and Sales Dataset" />
-                </Box>
-                <Box sx={{
-                    fontSize: '.8rem',
-                    lineHeight: '1.3rem',
-                    textAlign: 'justify',
-                    paddingTop: '.5rem'
+            <Box sx={{
+                width: '35rem',
+                height: '400px',
+                bgcolor: '#000',
+                color: '#000',
+                padding: '20px',
+                shadow: '20px',
+                borderTopLeftRadius: '15px',
+                borderBottomRightRadius: '15px',
+                border: '10px'
+        }}>
+                <a href="https://github.com/InsightCracker/E-Commerce-Customer-Behavior-and-Sales-Dataset">
+
+                    <Box className="box" sx={{
+                    height: '200px'
                     }}>
-                    <h4>🚀🛒 E-COMMERCE CUSTOMER BEHAVIOR AND SALES DATASET🚀 <br /></h4>
-                    📊 Executive Summary<br />
-                    This report presents an overview of e-commerce customer behavior and sales performance for the 2023–2024 period, analyzed using SQL and Power BI. Total sales amounted to ₺4.92 million from 5,000 customers, with an average order value of ₺983.11. Electronics, Home & Garden, and Sports were the top-performing categories, while Books and Food recorded the lowest sales. Istanbul led all cities with ₺1.33 million in revenue, followed by Ankara and Izmir.<br />
+                        <img src={sales} alt="E-Commerce Customer Behavior and Sales Dataset" />
+                    </Box>
+                    <Box sx={{
+                        fontSize: '.8rem',
+                        lineHeight: '1.3rem',
+                        textAlign: 'justify',
+                        color: '#000',
+                        paddingTop: '.5rem'
+                        }}>
+                        <h4>🚀🛒 E-COMMERCE CUSTOMER BEHAVIOR AND SALES DATASET🚀 <br /></h4>
+                        📊 Executive Summary<br />
+                        This report presents an overview of e-commerce customer behavior and sales performance for the 2023–2024 period, analyzed using SQL and Power BI. Total sales amounted to ₺4.92 million from 5,000 customers, with an average order value of ₺983.11. Electronics, Home & Garden, and Sports were the top-performing categories, while Books and Food recorded the lowest sales. Istanbul led all cities with ₺1.33 million in revenue, followed by Ankara and Izmir.<br />
 
-                    📝 Business Problem<br />
-                    The e-commerce company faced challenges in understanding customer purchasing behavior, sales performance, and revenue distribution across product categories and locations. The absence of a centralized analytical system limited management’s ability to track key performance indicators (KPIs), identify high-performing segments, and evaluate the effectiveness of discounts and marketing strategies. <br />
-
-                    Additionally, decision-making was hindered by fragmented data sources and a lack of real-time visibility into customer trends, payment preferences, and delivery performance. To address these issues, a data-driven analytical dashboard was developed using Power BI to integrate sales, demographic, and operational data enabling actionable insights for improving sales strategies, customer retention, and overall business performance. <br />
-                    <a href="https://github.com/InsightCracker/E-Commerce-Customer-Behavior-and-Sales-Dataset">
-                        <Text sx={buttonStyle} marginRight={'.5rem'}>Read More</Text>
-                    </a>
-                </Box>
-            </a>
+                        <a href="https://github.com/InsightCracker/E-Commerce-Customer-Behavior-and-Sales-Dataset">
+                            <Text sx={buttonStyle} marginRight={'.5rem'}>Read More</Text>
+                        </a>
+                    </Box>
+                </a>
+            </Box>
         </SwiperSlide>
 
-        <SwiperSlide>
+        {/* <SwiperSlide>
             <a href="https://github.com/InsightCracker/HR-ANALYTICS-REPORT---ABSENTEEISM">
                 <Box className="box">
                     <img src={hr} alt="HR ANALYTICS REPORT – ABSENTEEISM INSIGHTS" />
@@ -194,7 +206,7 @@ const Work = () => {
                     </a>
                 </Box>
             </a>
-        </SwiperSlide>
+        </SwiperSlide> */}
     </Swiper>
   )
 }

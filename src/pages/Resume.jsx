@@ -1,5 +1,6 @@
 import { 
     Box,
+    color,
     Text 
 } from "@chakra-ui/react";
 import cv from '../assets/doc/CV.pdf';
@@ -13,7 +14,7 @@ const Resume = () => {
         textAlign: 'center',
         margin: '0 auto',
         marginBottom: '1rem',
-        backgroundColor: '#ca0707',
+        backgroundColor: '#3b82f6',
         padding: '1rem .5rem'
     }
 
@@ -21,8 +22,9 @@ const Resume = () => {
         padding: "8px",
         cursor: 'pointer',
         fontSize: '.7rem',
-        border: '1px solid #fff',
+        border: '1px solid #3b82f6',
         textAlign: 'center',
+        color: '#3b82f6',
         margin: '0 auto'
     };
 

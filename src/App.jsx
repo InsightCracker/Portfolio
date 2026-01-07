@@ -17,7 +17,7 @@ function App() {
   const bigCircle = {
     w: '20rem',
     h: '20rem',
-    backgroundColor: '#ca0707',
+    backgroundColor: '#3b82f6',
     borderRadius: '20px',
     pos: 'absolute',
     transform: 'rotate(-45deg)',
@@ -29,7 +29,7 @@ function App() {
           <Box sx={{
             w: '10rem',
             h: '10rem',
-            backgroundColor: '#ca0707',
+            backgroundColor: '#3b82f6',
             borderRadius: '100%',
             pos: 'absolute',
             top: '-50px',
@@ -39,7 +39,7 @@ function App() {
           <Box sx={{
             w: '25rem',
             h: '25rem',
-            backgroundColor: '#ca0707',
+            backgroundColor: '#3b82f6',
             borderRadius: '100%',
             pos: 'absolute',
             top: '20vh',
@@ -49,7 +49,7 @@ function App() {
           <Box sx={{
             w: '60rem',
             h: '20rem',
-            backgroundColor: '#ca0707',
+            backgroundColor: '#3b82f6',
             borderRadius: '20px',
             pos: 'absolute',
             top: '105vh',

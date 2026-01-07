@@ -8,7 +8,9 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
-  FaWhatsapp
+  FaWhatsapp,
+  FaMailBulk,
+  FaMailchimp
 } from "react-icons/fa";
 
 import Typewriter from "typewriter-effect";
@@ -25,7 +27,7 @@ const LandingContent = () => {
         <Text className="greeting" sx={{
           fontSize: '.9rem',
           textTransform: 'uppercase',
-          bgColor: '#ca0707',
+          bgColor: '#3b82f6',
           color: '#fff',
           padding: '.5rem',
           width: "35%",
@@ -46,7 +48,7 @@ const LandingContent = () => {
         </Heading>
         <Text sx={{
           fontSize: '.8rem'
-        }}>I'm a data analyst, passionate about turning numbers into insights that drive business growth.</Text>
+        }}>Data Analyst | Accounting Graduate | Business Analyst</Text>
 
         <Box sx={{
             margin: '1rem 0'
@@ -58,20 +60,20 @@ const LandingContent = () => {
                 fontSize: '1.2rem',
                 display: "flex"
             }}>
-                <a href={"http://www.twitter.com/InsightCracker"}>
-                  <Text marginRight={'.5rem'}><FaTwitter /></Text>
+                <a href={"https://www.linkedin.com/in/InsightCracker"}>
+                  <Text marginRight={'.5rem'} color={'#000'}><FaLinkedinIn /></Text>
                 </a>
                 <a href={"http://www.github.com/InsightCracker"}>
-                  <Text marginRight={'.5rem'}><FaGithub /></Text>
+                  <Text marginRight={'.5rem'} color={'#000'}><FaGithub /></Text>
+                </a>
+                <a href={"http://www.twitter.com/InsightCracker"}>
+                  <Text marginRight={'.5rem'} color={'#000'}><FaTwitter /></Text>
                 </a>
                 <a href={"http://www.instagram.com/mightymykel"}>
-                  <Text marginRight={'.5rem'}><FaInstagram /></Text>
-                </a>
-                <a href={"https://www.linkedin.com/in/InsightCracker"}>
-                  <Text marginRight={'.5rem'}><FaLinkedinIn /></Text>
+                  <Text marginRight={'.5rem'} color={'#000'}><FaInstagram /></Text>
                 </a>
                 <a href={"https://wa.me/+2349036190420"}>
-                  <Text marginRight={'.5rem'}><FaWhatsapp /></Text>
+                  <Text marginRight={'.5rem'} color={'#000'}><FaWhatsapp /></Text>
                 </a>
             </Box>
         </Box>
@@ -82,15 +84,16 @@ const LandingContent = () => {
         }}>
             <a href="#portfolio">
             <Text 
-              bgColor={"#ca0707"} 
-              border={"1px solid #ca0707"}
+              bgColor={"#3b82f6"} 
+              border={"1px solid #3b82f6"}
               marginRight={"10px"}
               sx={buttonStyle}
             >View Work</Text>
             </a>
             <a href="#contact">
               <Text
-                border={"1px solid #fff"} 
+                border={"1px solid #3b82f6"}
+                color={'#000'} 
                 sx={buttonStyle}
               >Hire Me</Text>
             </a>

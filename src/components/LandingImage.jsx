@@ -7,7 +7,7 @@ const LandingImage = () => {
   return (
     <Box className="LandingImage">
       <Box sx={{
-          bgColor: '#fff'
+          bgColor: '#3b82f6'
         }} className="top"></Box>
       <Box sx={{
         maxW: '300px',

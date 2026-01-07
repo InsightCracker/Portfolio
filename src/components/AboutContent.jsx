@@ -33,7 +33,7 @@ const AboutContent = () => {
     const textStyle = {
         fontSize: '.9rem',
         textTransform: 'uppercase',
-        bgColor: '#ca0707',
+        bgColor: '#3b82f6',
         color: '#fff',
         padding: '.5rem',
         textAlign: 'center',
@@ -77,8 +77,7 @@ const AboutContent = () => {
                             fontSize: '.8rem',
                             lineHeight: '1.3rem',
                             textAlign: 'justify'
-                        }}>Hi, thanks for stopping by! I’m Michael Oladimeji, a Data Analyst with strong problem-solving skills. I take messy data and turn it into insights people can actually use and have worked on building dashboards, reports, and data-driven solutions using modern analytics tools and techniques.<br />
-                         If you're looking for a detail-driven and analytical data professional to bring clarity to your data and support your next project. I might just be the guy you need.</Text>
+                        }}>Dedicated and detail-oriented Financial & Business Data Analyst with strong proficiency in Excel, Power BI, and SQL. Experienced in collecting, analyzing, and interpreting complex datasets to support informed business decisions. Skilled in developing interactive dashboards, automating reports, and performing data cleansing and transformation. Adept at identifying trends, generating actionable insights, and clearly communicating findings to both technical and non-technical stakeholders. Passionate about leveraging data to support strategic objectives and improve organizational performance.</Text>
                     </Box>
                 </Box>
             </SwiperSlide>

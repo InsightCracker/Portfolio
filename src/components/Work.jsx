@@ -29,6 +29,11 @@ const buttonStyle = {
     textAlign: 'center',
   }
 
+const imageStyle ={
+    objectFit: 'cover',
+    height: '20px'
+}
+
 
 const Work = () => {
   return (
@@ -65,22 +70,24 @@ const Work = () => {
 
         <SwiperSlide>
             <Box sx={{
-                width: '35rem',
+                width: '30rem',
                 height: '400px',
-                bgcolor: '#000',
-                color: '#000',
-                padding: '20px',
-                shadow: '20px',
+                // bgColor: '#000',
+                color: '#fff',
+                border: '20px solid red',
+                // shadow: '20px yellow',
                 borderTopLeftRadius: '15px',
                 borderBottomRightRadius: '15px',
                 border: '10px'
         }}>
                 <a href="https://github.com/InsightCracker/E-Commerce-Customer-Behavior-and-Sales-Dataset">
 
-                    <Box className="box" sx={{
-                    height: '200px'
-                    }}>
-                        <img src={sales} alt="E-Commerce Customer Behavior and Sales Dataset" />
+                    <Box className="box" >
+                        <img 
+                            src={sales} 
+                            sx={imageStyle}
+                            alt="E-Commerce Customer Behavior and Sales Dataset" 
+                        />
                     </Box>
                     <Box sx={{
                         fontSize: '.8rem',

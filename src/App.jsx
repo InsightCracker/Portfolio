@@ -6,7 +6,6 @@ import Navbar from './util/Navbar';
 import LandingPage from './pages/LandingPage';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Icons from './util/Icons';
 
@@ -69,7 +68,6 @@ function App() {
         <LandingPage />
         <About />
         <Portfolio />
-        <Resume data-aos="fade-up" data-aos-offset="200" />
         <Contact />
     </div>
   )

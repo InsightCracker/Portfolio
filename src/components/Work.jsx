@@ -1,5 +1,6 @@
 import { 
     Box,
+    position,
     Text
 } from "@chakra-ui/react";
 
@@ -20,6 +21,8 @@ import "swiper/css/pagination";
 
 import sales from "../assets/image/sales.png";
 import dataclean from "../assets/image/dataclean.jpg";
+import usDebt from "../assets/image/usDebt.png";
+import ballon from '../assets/image/ballon.png'
 
 
 const Work = () => {
@@ -58,7 +61,7 @@ const Work = () => {
 
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '420px',
+                height: '425px',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -126,7 +129,7 @@ const Work = () => {
 
  <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '420px',
+                height: '425px',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -141,8 +144,10 @@ const Work = () => {
                     <img 
                         src={sales}
                         sx={{
-                        width: '100%',
-                        height: '100%'
+                        width: '10%',
+                        height: '35%',
+                        position: 'relative',
+                        fit: 'cover'
                     }}
                         alt="E-Commerce Customer Behavior and Sales Dataset" 
                     />
@@ -156,10 +161,12 @@ const Work = () => {
                 
                     <Text sx={{
                         fontSize: '1rem',
-                        fontWeight: '500'
-                    }}>E-commerce Behaviour and Sales Analysis Dashboard</Text>
+                        fontWeight: '500',
+                    }}>E-commerce Sales Analysis Dashboard</Text>
 
-                    <Box>
+                    <Box sx={{
+                        margin: '10px 0'
+                    }}>
                         <Text sx={{
                             padding: '.3rem .8rem',
                             fontSize: '.8rem',
@@ -167,7 +174,8 @@ const Work = () => {
                             color: '#3b82f6',
                             display: 'inline-block',
                             borderRadius: '10px',
-                            margin: '10px 0'
+                            marginRight: '5px',
+                            marginBottom: '5px'
                         }}>
                             Excel
                         </Text>
@@ -179,9 +187,9 @@ const Work = () => {
                             color: '#3b82f6',
                             display: 'inline-block',
                             borderRadius: '10px',
-                            margin: '10px 0'
+                            marginRight: '5px'
                         }}>
-                            Power Bi
+                            Power BI
                         </Text>
 
                         <Text sx={{
@@ -191,7 +199,8 @@ const Work = () => {
                             color: '#3b82f6',
                             display: 'inline-block',
                             borderRadius: '10px',
-                            margin: '10px 0'
+                            marginRight: '5px',
+                            marginBottom: '5px'
                         }}>
                             Sales Analysis
                         </Text>
@@ -203,7 +212,8 @@ const Work = () => {
                             color: '#3b82f6',
                             display: 'inline-block',
                             borderRadius: '10px',
-                            margin: '10px 0'
+                            marginRight: '5px',
+                            marginBottom: '5px'
                         }}>
                             Critical Thinking
                         </Text>
@@ -215,9 +225,9 @@ const Work = () => {
                             color: '#3b82f6',
                             display: 'inline-block',
                             borderRadius: '10px',
-                            margin: '10px 0'
+                            marginRight: '5px'
                         }}>
-                            Report
+                            Data Interpretation & Reporting
                         </Text>
                     </Box>
                     
@@ -226,7 +236,7 @@ const Work = () => {
                         fontSize: '.9rem',
                         color: '#16161680'
                         }}>
-                            I completed a data cleaning project that involved handling missing and invalid values, removing duplicates, and standardizing date formats, resulting in improved data accuracy and reliability for effective analysis.
+                            Developed an interactive Power BI dashboard to analyze E-commerce sales performance, presenting insights on total revenue (₦4.92M), customer behaviour, and order trends by product category and city.
                     </Text>
 
                     <a href="https://github.com/InsightCracker/E-Commerce-Customer-Behavior-and-Sales-Dataset">
@@ -244,7 +254,7 @@ const Work = () => {
 
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '420px',
+                height: '425px',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -257,12 +267,12 @@ const Work = () => {
                     overflow: 'hidden'
                 }} >
                     <img 
-                        src={sales}
+                        src={usDebt}
                         sx={{
                         width: '100%',
                         height: '100%'
                     }}
-                        alt="E-Commerce Customer Behavior and Sales Dataset" 
+                        alt="US Debt TO PENNY ANALYSIS" 
                     />
                 </Box>
 
@@ -275,26 +285,81 @@ const Work = () => {
                     <Text sx={{
                         fontSize: '1rem',
                         fontWeight: '500'
-                    }}>Data Cleaning and Validation</Text>
+                    }}>US Debt to Penny Analysis</Text>
 
-                    <Text sx={{
+                    <Box sx={{
+                        margin: '10px 0'
+                    }}>
+                        <Text sx={{
                             padding: '.3rem .8rem',
                             fontSize: '.8rem',
                             bgColor: '#ccdbf180',
                             color: '#3b82f6',
                             display: 'inline-block',
                             borderRadius: '10px',
-                            margin: '10px 0'
+                            marginRight: '5px',
+                            marginBottom: '5px'
                         }}>
                             Excel
                         </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px'
+                        }}>
+                            SQL
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Financial Analysis
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Statistics
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px'
+                        }}>
+                            Database Schema Design
+                        </Text>
+                    </Box>
                     
                     <Text sx={{
                         lineHeight: '1.1rem',
                         fontSize: '.9rem',
                         color: '#16161680'
                         }}>
-                            I completed a data cleaning project that involved handling missing and invalid values, removing duplicates, and standardizing date formats, resulting in improved data accuracy and reliability for effective analysis.
+                            Designed a relational database schema to analyze U.S. debt to penny, modeling debt instruments, Growth rate.
                     </Text>
 
                     <a href="https://github.com/InsightCracker/E-Commerce-Customer-Behavior-and-Sales-Dataset">
@@ -312,7 +377,7 @@ const Work = () => {
 
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '420px',
+                height: '425px',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -324,7 +389,7 @@ const Work = () => {
                     overflow: 'hidden'
                 }} >
                     <img 
-                        src={sales}
+                        src={ballon}
                         sx={{
                         width: '100%',
                         height: '100%'
@@ -342,26 +407,81 @@ const Work = () => {
                     <Text sx={{
                         fontSize: '1rem',
                         fontWeight: '500'
-                    }}>Data Cleaning and Validation</Text>
+                    }}>2025 Ballon d'Or Nominees Analysis</Text>
 
-                    <Text sx={{
+                    <Box sx={{
+                        margin: '10px 0'
+                    }}>
+                        <Text sx={{
                             padding: '.3rem .8rem',
                             fontSize: '.8rem',
                             bgColor: '#ccdbf180',
                             color: '#3b82f6',
                             display: 'inline-block',
                             borderRadius: '10px',
-                            margin: '10px 0'
+                            marginRight: '5px',
+                            marginBottom: '5px'
                         }}>
                             Excel
                         </Text>
-                    
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px'
+                        }}>
+                            Power BI
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Sport Analysis
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Critical Thinking
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px'
+                        }}>
+                            Data Visualization and Story-telling
+                        </Text>
+                    </Box>
+
                     <Text sx={{
                         lineHeight: '1.1rem',
                         fontSize: '.9rem',
                         color: '#16161680'
                         }}>
-                            I completed a data cleaning project that involved handling missing and invalid values, removing duplicates, and standardizing date formats, resulting in improved data accuracy and reliability for effective analysis.
+                            I analyzed the performance of 2025 Ballon d’Or male nominees by examining key metrics such as goals, assists, minutes played, and disciplinary records to identify top- and low-performing players, leading contributors, and overall performance trends.
                     </Text>
 
                     <a href="https://github.com/InsightCracker/E-Commerce-Customer-Behavior-and-Sales-Dataset">

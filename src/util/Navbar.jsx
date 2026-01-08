@@ -63,15 +63,17 @@ const Navbar = () => {
           position: 'absolute',
           right: '0',
           top: '45px',
-          padding: '0 1rem'
+          padding: '0 1rem',
+          fontWeight: '500',
+          fontSize: '1rem',
+          textTransform: 'uppercase',
+          lineHeight: '4rem'
         }}
           display={show ? 'block' : 'none' }
       >
         <ul>
           <a href="#home">
-            <li sx={{
-            fontSize: '12rem'
-          }}>Home</li>
+            <li>Home</li>
           </a>
           <a href="#about">
             <li>About</li>

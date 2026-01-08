@@ -61,7 +61,7 @@ const Work = () => {
 
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '425px',
+                height: '450px',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -129,7 +129,7 @@ const Work = () => {
 
  <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '425px',
+                height: '450px',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -254,7 +254,7 @@ const Work = () => {
         
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '425px',
+                height: '450px',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -377,13 +377,15 @@ const Work = () => {
 
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '425px',
+                height: '450px',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
                 borderTopLeftRadius: '15px',
                 borderBottomRightRadius: '15px',
-                marginBottom: '5px'
+                marginBottom: '5px',
+                overflow: 'hidden',
+                objectFit: 'cover'
         }}>
                 <Box className="box" sx={{
                     height: '35%',

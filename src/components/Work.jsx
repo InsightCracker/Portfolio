@@ -109,15 +109,15 @@ const Work = () => {
                     <Text sx={{
                         lineHeight: '1.1rem',
                         fontSize: '.9rem',
-                        color: '#16161680'
+                        color: '#16161680',
+                        marginBottom: '5px'
                         }}>
                             I completed a data cleaning project that involved handling missing and invalid values, removing duplicates, and standardizing date formats, resulting in improved data accuracy and reliability for effective analysis.
                     </Text>
 
                     <a href="https://github.com/InsightCracker/E-Commerce-Customer-Behavior-and-Sales-Dataset">
                         <Text sx={{
-                            fontSize: '.7rem',
-                            cursor: 'pointer',
+                            fontSize: '.9rem',
                             color: '#3b82f6',
                             display: 'inline'
                         }}>Read More 
@@ -234,15 +234,15 @@ const Work = () => {
                     <Text sx={{
                         lineHeight: '1.1rem',
                         fontSize: '.9rem',
-                        color: '#16161680'
+                        color: '#16161680',
+                        marginBottom: '5px'
                         }}>
-                            Developed an interactive Power BI dashboard to analyze E-commerce sales performance, presenting insights on total revenue (₦4.92M), customer behaviour, and order trends by product category and city.
+                            Developed an interactive Power BI dashboard to analyze E-commerce sales performance, presenting insights on total revenue (₺4.92M), customer behaviour, and order trends by product category and city.
                     </Text>
 
                     <a href="https://github.com/InsightCracker/E-Commerce-Customer-Behavior-and-Sales-Dataset">
                         <Text sx={{
-                            fontSize: '.7rem',
-                            cursor: 'pointer',
+                            fontSize: '1rem',
                             color: '#3b82f6',
                             display: 'inline'
                         }}>Read More 
@@ -252,7 +252,6 @@ const Work = () => {
             </Box>
         </SwiperSlide>
         
-        <a href="https://github.com/InsightCracker/US-Debt-Analysis">
         <SwiperSlide>
             <Box className="projectbox" sx={{
                 height: '425px',
@@ -365,7 +364,7 @@ const Work = () => {
 
                     <a href="https://github.com/InsightCracker/US-Debt-Analysis">
                         <Text sx={{
-                            fontSize: '.7rem',
+                            fontSize: '.9rem',
                             cursor: 'pointer',
                             color: '#3b82f6',
                             display: 'inline'
@@ -375,7 +374,6 @@ const Work = () => {
                 </Box>
             </Box>
         </SwiperSlide>
-        </a>
 
         <SwiperSlide>
             <Box className="projectbox" sx={{
@@ -384,7 +382,8 @@ const Work = () => {
                 color: '#000',
                 border: '1px solid #363636ff',
                 borderTopLeftRadius: '15px',
-                borderBottomRightRadius: '15px'
+                borderBottomRightRadius: '15px',
+                marginBottom: '5px'
         }}>
                 <Box className="box" sx={{
                     height: '35%',
@@ -481,15 +480,17 @@ const Work = () => {
                     <Text sx={{
                         lineHeight: '1.1rem',
                         fontSize: '.9rem',
-                        color: '#16161680'
+                        color: '#16161680',
+                        marginBottom: '5px'
                         }}>
                             I analyzed the performance of 2025 Ballon d’Or male nominees by examining key metrics such as goals, assists, minutes played, and disciplinary records to identify top- and low-performing players, leading contributors, and overall performance trends.
                     </Text>
 
-                    <a href="https://github.com/InsightCracker/E-Commerce-Customer-Behavior-and-Sales-Dataset">
+                    <a sx={{
+                        fontSize: '1rem',
+                    }} href="https://github.com/InsightCracker/2025-Ballon-d-Or-Male-Nominees-Statistical-Analysis-Report">
                         <Text sx={{
-                            fontSize: '.7rem',
-                            cursor: 'pointer',
+                            fontSize: '.9rem',
                             color: '#3b82f6',
                             display: 'inline'
                         }}>Read More 

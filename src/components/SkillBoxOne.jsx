@@ -22,7 +22,7 @@ const ContactLeft = () => {
             marginLeft: '.3rem',
             marginBottom: '.3rem',
             display: 'inline',
-        }}>Programming & DB</Text>
+        }}>Database</Text>
 
         <Box sx={{
             margin: '10px 0'

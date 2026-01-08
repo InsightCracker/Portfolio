@@ -22,7 +22,7 @@ const LandingContent = () => {
     fontSize: '.7rem'
   }
   return (
-    <Box className="LandingContent">
+    <Box className="LandingContent" id="home">
         
         <Text className="greeting" sx={{
           fontSize: '.9rem',

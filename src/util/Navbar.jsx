@@ -38,14 +38,17 @@ const Navbar = () => {
 
       <Box className="large_nav">
         <ul>
-        <a href="#about">
-           <li>About</li>
+          <a href="#home">
+            <li>Home</li>
+          </a>
+          <a href="#about">
+            <li>About</li>
+          </a>
+          <a href="#skills">
+            <li>Skills</li>
           </a>
           <a href="#portfolio">
-            <li>Portfolio</li>
-          </a>
-          <a href="#resume">
-            <li>Resume</li>
+            <li>Projects</li>
           </a>
           <a href="#contact">
             <li>Contact</li>
@@ -53,19 +56,31 @@ const Navbar = () => {
         </ul>
       </Box>
 
-      <Box 
-        className="small_nav"
-        display={show ? 'block' : 'none' }
+      <Box className="navbox" sx={{
+          height: '80vh',
+          width: '100%',
+          bgColor: '#3b82f6',
+          position: 'absolute',
+          right: '0',
+          top: '45px',
+          padding: '0 1rem'
+        }}
+          display={show ? 'block' : 'none' }
       >
         <ul>
+          <a href="#home">
+            <li sx={{
+            fontSize: '12rem'
+          }}>Home</li>
+          </a>
           <a href="#about">
-           <li>About</li>
+            <li>About</li>
+          </a>
+          <a href="#skills">
+            <li>Skills</li>
           </a>
           <a href="#portfolio">
-            <li>Portfolio</li>
-          </a>
-          <a href="#resume">
-            <li>Resume</li>
+            <li>Projects</li>
           </a>
           <a href="#contact">
             <li>Contact</li>

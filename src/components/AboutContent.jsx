@@ -72,7 +72,7 @@ const AboutContent = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-                <Box sx={{
+                <Box id="education" sx={{
                     width: '100%',
                     h: '100%',
                     paddingBottom: '30px'

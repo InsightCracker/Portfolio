@@ -24,7 +24,7 @@ const SkillContent = () => {
   return (
     <Box sx={{
         margin: '7rem 0'
-    }} className="contact" id="contact">
+    }} className="contact" id="skills">
         <Box>
             <Text className="bgStyle" sx={textStyle}>Technical Skills</Text>
         </Box>

@@ -7,7 +7,7 @@ import LandingPage from './pages/LandingPage';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
-import Icons from './util/Icons';
+import SkillContent from './pages/Skillls';
 
 function App() {
   aos.init({
@@ -67,6 +67,7 @@ function App() {
         <Navbar />
         <LandingPage />
         <About />
+        <SkillContent />
         <Portfolio />
         <Contact />
     </div>

@@ -2,7 +2,7 @@ import {
     Box
 } from "@chakra-ui/react";
 
-import SkillContent from "../components/AboutContent";
+import SkillContent from "../components/SkillContent";
 
 const About = () => {
     return (

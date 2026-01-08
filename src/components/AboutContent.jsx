@@ -75,7 +75,7 @@ const AboutContent = () => {
                             fontSize: '.8rem',
                             lineHeight: '1.3rem',
                             textAlign: 'justify'
-                        }}>Dedicated and detail-oriented Financial & Business Data Analyst with strong proficiency in Excel, Power BI, and SQL. Experienced in collecting, analyzing, and interpreting complex datasets to support informed business decisions. Skilled in developing interactive dashboards, automating reports, and performing data cleansing and transformation. Adept at identifying trends, generating actionable insights, and clearly communicating findings to both technical and non-technical stakeholders. Passionate about leveraging data to support strategic objectives and improve organizational performance.</Text>
+                        }}>Dedicated and detail-oriented Financial & Business Data Analyst with strong proficiency in Excel, Power BI, and SQL. Experienced in collecting, analyzing, and interpreting complex datasets to support informed business decisions. Skilled in developing interactive dashboards, automating reports, and performing data cleansing and transformation. Adapt at identifying trends, generating actionable insights, and clearly communicating findings to both technical and non-technical stakeholders. Passionate about leveraging data to support strategic objectives and improve organizational performance.</Text>
                     </Box>
                 </Box>
             </SwiperSlide>

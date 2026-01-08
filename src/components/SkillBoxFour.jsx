@@ -74,6 +74,18 @@ const ContactRight = () => {
             }}>
                 Git/GitHub
             </Text>
+
+            <Text sx={{
+                padding: '.3rem .8rem',
+                fontSize: '.8rem',
+                bgColor: '#b1b1b180',
+                color: '#000',
+                display: 'inline-block',
+                borderRadius: '10px',
+                marginRight: '5px'
+            }}>
+                HTML5
+            </Text>
         </Box>
         
     </Box>

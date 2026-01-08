@@ -251,7 +251,8 @@ const Work = () => {
                 </Box>
             </Box>
         </SwiperSlide>
-
+        
+        <a href="https://github.com/InsightCracker/US-Debt-Analysis">
         <SwiperSlide>
             <Box className="projectbox" sx={{
                 height: '425px',
@@ -362,7 +363,7 @@ const Work = () => {
                             Designed a relational database schema to analyze U.S. debt to penny, modeling debt instruments, Growth rate.
                     </Text>
 
-                    <a href="https://github.com/InsightCracker/E-Commerce-Customer-Behavior-and-Sales-Dataset">
+                    <a href="https://github.com/InsightCracker/US-Debt-Analysis">
                         <Text sx={{
                             fontSize: '.7rem',
                             cursor: 'pointer',
@@ -374,6 +375,7 @@ const Work = () => {
                 </Box>
             </Box>
         </SwiperSlide>
+        </a>
 
         <SwiperSlide>
             <Box className="projectbox" sx={{

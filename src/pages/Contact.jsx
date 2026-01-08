@@ -10,7 +10,8 @@ const Contact = () => {
     const textStyle = {
         width: '8rem',
         fontSize: '.9rem',
-        backgroundColor: '#ca0707',
+        backgroundColor: '#3b82f6',
+        borderRadius: '.5rem',
         textTransform: 'uppercase',
         color: '#fff',
         padding: '1rem .5rem',

@@ -11,6 +11,7 @@ const PortfolioHead = () => {
       bgColor: '#3b82f6',
       color: '#fff',
       padding: '1rem .5rem',
+      borderRadius: '.5rem',
       textAlign: 'center',
       margin: '0 auto',
       marginBottom: '1rem'
@@ -23,8 +24,8 @@ const PortfolioHead = () => {
         <Text className="greeting bgStyle" sx={textStyle}>PROJECTS</Text>
 
         <Text sx={{
-            fontSize: '.9rem'
-        }}>Showcasing some of my best projects</Text>
+            fontSize: '.8rem'
+        }}>Featuring key projects that demonstrate my skills.</Text>
     </Box>
   )
 }

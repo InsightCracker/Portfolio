@@ -1,11 +1,5 @@
 import { 
-    FaTwitter, 
-    FaGithub,
-    FaInstagram,
-    FaLinkedinIn,
-    FaWhatsapp,
-    FaLaptop,
-    FaLaptopCode
+    FaLaptop
 } from "react-icons/fa";
 
 import { Box, Text } from "@chakra-ui/react";

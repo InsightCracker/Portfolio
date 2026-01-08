@@ -8,6 +8,7 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import SkillContent from './pages/Skillls';
+import Footer from './util/Footer';
 
 function App() {
   aos.init({
@@ -70,6 +71,7 @@ function App() {
         <SkillContent />
         <Portfolio />
         <Contact />
+        <Footer />
     </div>
   )
 }

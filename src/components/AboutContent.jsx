@@ -32,9 +32,7 @@ const AboutContent = () => {
 
   return (
         <Swiper
-            pagination={{
-                type: "fraction",
-            }}
+            pagination={true}
             modules={[Pagination]}
             spaceBetween={50}
             slidesPerView={1}
@@ -50,7 +48,7 @@ const AboutContent = () => {
                     <Box sx={{
                             bgColor: '#f5f5f5ff',
                             color: '#fff',
-                            padding: '20px 15px 3rem 15px',
+                            padding: '20px 15px 1rem 15px',
                             margin: '.5rem 0',
                             borderTopLeftRadius: '15px',
                             borderBottomRightRadius: '15px',
@@ -74,7 +72,7 @@ const AboutContent = () => {
             <SwiperSlide>
                 <Box id="education" sx={{
                     width: '100%',
-                    h: '100%',
+                    alignItems: 'center',
                     paddingBottom: '30px'
             }} className="swiper_box">
                     <AboutImageIII />

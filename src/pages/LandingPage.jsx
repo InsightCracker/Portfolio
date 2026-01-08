@@ -25,7 +25,7 @@ const LandingPage = () => {
 
         <a href={"#"}>
           <Text sx={{
-            color: '#3b82f6',
+            color: '#002766ff',
             fontSize: '1.5rem',
             pos: 'fixed',
             bottom: '.5rem',

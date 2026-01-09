@@ -57,7 +57,7 @@ const Navbar = () => {
       </Box>
 
       <Box className="navbox" sx={{
-          height: '80vh',
+          height: '50vh',
           width: '100%',
           bgColor: '#3b82f6',
           position: 'absolute',

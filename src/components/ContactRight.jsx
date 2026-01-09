@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { 
     Box,
+    color,
     Text
 } from "@chakra-ui/react"
 
@@ -65,7 +66,9 @@ const ContactRight = () => {
                     cols="30" 
                     rows="10">                        
                 </textarea>
-                <button type="submit" className="btn">SEND</button>
+                <button type="submit" className="btn" sx={{
+                    color: 'red'
+                }}>SEND</button>
             </form>
         </Box>
     </Box>

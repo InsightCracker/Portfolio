@@ -1,7 +1,7 @@
 import { 
   Box
 } from "@chakra-ui/react";
-import Pic from "../assets/image/Layer.png"; 
+import Pic from "../assets/image/fgg.png"; 
 
 const LandingImage = () => {
   return (
@@ -13,7 +13,7 @@ const LandingImage = () => {
         maxW: '300px',
         m: '0 auto',
         border: '1px solid #fff',
-        bgColor: '#000',      
+        bgColor: '#fff',      
     }} className="landing_con">
         <img src={Pic} alt="code" />
       </Box>

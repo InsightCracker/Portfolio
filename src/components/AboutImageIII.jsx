@@ -14,7 +14,7 @@ import {
           maxW: '300px',
           m: '0 auto',
           border: '1px solid #3b82f6',
-          bgColor: '#000'      
+          bgColor: '#dadadaff'      
       }} className="landing_con">
           <img src={Pic} alt="code" />
         </Box>

@@ -42,18 +42,30 @@ const ContactRight = () => {
         // Proceed with sending email
         console.log({ name, email, subject, msg });
 
-        Email.send({
-            SecureToken: "YOUR_SECURE_TOKEN",
-            To: "oladimejimichael224@gmail.com",
-            From: email,
-            Subject: subject,
-            Body: `
-                Name: ${name}<br/>
-                Email: ${email}<br/>
-                Message: ${msg}
-            `
-        }).then((message) => {
-            alert("Email sent successfully");
+        const templateParams = {
+            from_name: name,
+            from_email: email,
+            subject: subject,
+            message: msg,
+        };
+
+    emailjs
+        .send(
+            'service_izmwaaq',
+            'template_06invtx',
+            templateParams,
+            'VgMQ4RiIdq-O24UnY'
+        )
+        .then(() => {
+            alert('Email sent successfully!');
+            setName('');
+            setEmail('');
+            setSubject('');
+            setMsg('');
+        })
+        .catch((error) => {
+            console.error('EmailJS Error:', error);
+            alert('Failed to send email');
         });
     };
     

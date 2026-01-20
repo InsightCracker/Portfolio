@@ -377,7 +377,7 @@ const Work = () => {
                         fontSize: '.9rem',
                         color: '#16161680'
                         }}>
-                            Conducted a time-window transaction performance analysis (10:00–11:00) using SQL, querying and aggregating transaction volume and value, fraud and success rates, device distribution, and network performance to identify operational risks and optimization opportunities.
+                            Conducted a time-window transaction performance analysis, modeling transaction volume and value, fraud rates, success and failure rates, and network performance to identify operational risks and improvement opportunities.
                     </Text>
 
                     <a href="https://github.com/InsightCracker/Financial-Transaction-Performance-Fraud-Analytics">

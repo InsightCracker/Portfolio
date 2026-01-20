@@ -20,7 +20,7 @@ import "swiper/css/pagination";
 
 
 import sales from "../assets/image/sales.png";
-import dataclean from "../assets/image/dataclean.jpg";
+import dataclean from "../assets/image/dataclean.png";
 import usDebt from "../assets/image/usDebt.png";
 import ballon from '../assets/image/ballon.png'
 
@@ -69,19 +69,24 @@ const Work = () => {
                 borderBottomRightRadius: '15px',
                 overflow: 'hidden'
         }}>
-                <Box className="box" sx={{
-                    height: '35%',
-                    overflow: 'hidden'
-                }} >
-                    <img 
-                        src={dataclean}
-                        sx={{
-                        width: '100%',
-                        height: '100%'
+                <Box
+                    className="box"
+                    sx={{
+                        height: '35%',
+                        overflow: 'hidden'
                     }}
-                        alt="E-Commerce Customer Behavior and Sales Dataset" 
+                >
+                    <img
+                        src={dataclean}
+                        alt="E-Commerce Customer Behavior and Sales Dataset"
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover'
+                        }}
                     />
                 </Box>
+
 
                 <Box sx={{
                     textAlign: 'justify',
@@ -143,12 +148,11 @@ const Work = () => {
                 }} >
                     <img 
                         src={sales}
-                        sx={{
-                        width: '10%',
-                        height: '35%',
-                        position: 'relative',
-                        fit: 'cover'
-                    }}
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover'
+                        }}
                         alt="E-Commerce Customer Behavior and Sales Dataset" 
                     />
                 </Box>
@@ -260,143 +264,21 @@ const Work = () => {
                 border: '1px solid #363636ff',
                 borderTopLeftRadius: '15px',
                 borderBottomRightRadius: '15px',
-                overflow: 'hidden'
-        }}>
-                <Box className="box" sx={{
-                    height: '35%',
-                    overflow: 'hidden'
-                }} >
-                    <img 
-                        src={usDebt}
-                        sx={{
-                        width: '100%',
-                        height: '100%'
-                    }}
-                        alt="US Debt TO PENNY ANALYSIS" 
-                    />
-                </Box>
-
-                <Box sx={{
-                    textAlign: 'justify',
-                    color: '#000',
-                    padding: '.8rem'
-                    }}>
-                
-                    <Text sx={{
-                        fontSize: '1rem',
-                        fontWeight: '500'
-                    }}>US Debt to Penny Analysis</Text>
-
-                    <Box sx={{
-                        margin: '10px 0'
-                    }}>
-                        <Text sx={{
-                            padding: '.3rem .8rem',
-                            fontSize: '.8rem',
-                            bgColor: '#ccdbf180',
-                            color: '#3b82f6',
-                            display: 'inline-block',
-                            borderRadius: '10px',
-                            marginRight: '5px',
-                            marginBottom: '5px'
-                        }}>
-                            Excel
-                        </Text>
-
-                        <Text sx={{
-                            padding: '.3rem .8rem',
-                            fontSize: '.8rem',
-                            bgColor: '#ccdbf180',
-                            color: '#3b82f6',
-                            display: 'inline-block',
-                            borderRadius: '10px',
-                            marginRight: '5px'
-                        }}>
-                            SQL
-                        </Text>
-
-                        <Text sx={{
-                            padding: '.3rem .8rem',
-                            fontSize: '.8rem',
-                            bgColor: '#ccdbf180',
-                            color: '#3b82f6',
-                            display: 'inline-block',
-                            borderRadius: '10px',
-                            marginRight: '5px',
-                            marginBottom: '5px'
-                        }}>
-                            Financial Analysis
-                        </Text>
-
-                        <Text sx={{
-                            padding: '.3rem .8rem',
-                            fontSize: '.8rem',
-                            bgColor: '#ccdbf180',
-                            color: '#3b82f6',
-                            display: 'inline-block',
-                            borderRadius: '10px',
-                            marginRight: '5px',
-                            marginBottom: '5px'
-                        }}>
-                            Statistics
-                        </Text>
-
-                        <Text sx={{
-                            padding: '.3rem .8rem',
-                            fontSize: '.8rem',
-                            bgColor: '#ccdbf180',
-                            color: '#3b82f6',
-                            display: 'inline-block',
-                            borderRadius: '10px',
-                            marginRight: '5px'
-                        }}>
-                            Database Schema Design
-                        </Text>
-                    </Box>
-                    
-                    <Text sx={{
-                        lineHeight: '1.1rem',
-                        fontSize: '.9rem',
-                        color: '#16161680'
-                        }}>
-                            Designed a relational database schema to analyze U.S. debt to penny, modeling debt instruments, Growth rate.
-                    </Text>
-
-                    <a href="https://github.com/InsightCracker/US-Debt-Analysis">
-                        <Text sx={{
-                            fontSize: '.9rem',
-                            cursor: 'pointer',
-                            color: '#3b82f6',
-                            display: 'inline'
-                        }}>Read More 
-                        </Text>
-                    </a>
-                </Box>
-            </Box>
-        </SwiperSlide>
-
-        <SwiperSlide>
-            <Box className="projectbox" sx={{
-                height: '450px',
-                bgColor: '#fafafaff',
-                color: '#000',
-                border: '1px solid #363636ff',
-                borderTopLeftRadius: '15px',
-                borderBottomRightRadius: '15px',
                 marginBottom: '5px',
                 overflow: 'hidden',
                 objectFit: 'cover'
-        }}>
+            }}>
                 <Box className="box" sx={{
                     height: '35%',
                     overflow: 'hidden'
                 }} >
                     <img 
                         src={ballon}
-                        sx={{
-                        width: '100%',
-                        height: '100%'
-                    }}
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover'
+                        }}
                         alt="E-Commerce Customer Behavior and Sales Dataset" 
                     />
                 </Box>
@@ -493,6 +375,130 @@ const Work = () => {
                     }} href="https://github.com/InsightCracker/2025-Ballon-d-Or-Male-Nominees-Statistical-Analysis-Report">
                         <Text sx={{
                             fontSize: '.9rem',
+                            color: '#3b82f6',
+                            display: 'inline'
+                        }}>Read More 
+                        </Text>
+                    </a>
+                </Box>
+            </Box>
+        </SwiperSlide>
+
+        <SwiperSlide>
+            <Box className="projectbox" sx={{
+                height: '450px',
+                bgColor: '#fafafaff',
+                color: '#000',
+                border: '1px solid #363636ff',
+                borderTopLeftRadius: '15px',
+                borderBottomRightRadius: '15px',
+                overflow: 'hidden'
+        }}>
+                <Box className="box" sx={{
+                    height: '35%',
+                    overflow: 'hidden'
+                }} >
+                    <img 
+                        src={usDebt}
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover'
+                        }}
+                        alt="US Debt TO PENNY ANALYSIS" 
+                    />
+                </Box>
+
+                <Box sx={{
+                    textAlign: 'justify',
+                    color: '#000',
+                    padding: '.8rem'
+                    }}>
+                
+                    <Text sx={{
+                        fontSize: '1rem',
+                        fontWeight: '500'
+                    }}>US Debt to Penny Analysis</Text>
+
+                    <Box sx={{
+                        margin: '10px 0'
+                    }}>
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Excel
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px'
+                        }}>
+                            SQL
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Financial Analysis
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Statistics
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px'
+                        }}>
+                            Database Schema Design
+                        </Text>
+                    </Box>
+                    
+                    <Text sx={{
+                        lineHeight: '1.1rem',
+                        fontSize: '.9rem',
+                        color: '#16161680'
+                        }}>
+                            Designed a relational database schema to analyze U.S. debt to penny, modeling debt instruments, Growth rate.
+                    </Text>
+
+                    <a href="https://github.com/InsightCracker/US-Debt-Analysis">
+                        <Text sx={{
+                            fontSize: '.9rem',
+                            cursor: 'pointer',
                             color: '#3b82f6',
                             display: 'inline'
                         }}>Read More 

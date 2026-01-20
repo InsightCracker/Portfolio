@@ -343,7 +343,7 @@ const Work = () => {
                             marginRight: '5px',
                             marginBottom: '5px'
                         }}>
-                            Financial Analysis
+                            DAX
                         </Text>
 
                         <Text sx={{
@@ -356,7 +356,7 @@ const Work = () => {
                             marginRight: '5px',
                             marginBottom: '5px'
                         }}>
-                            DAX
+                            Financial Analysis
                         </Text>
 
                         <Text sx={{

@@ -22,8 +22,9 @@ import "swiper/css/pagination";
 import sales from "../assets/image/sales.png";
 import dataclean from "../assets/image/dataclean.png";
 import usDebt from "../assets/image/usDebt.png";
-import ballon from '../assets/image/ballon.png'
-
+import ballon from '../assets/image/ballon.png';
+import finance from '../assets/image/finance.png';
+import HR from '../assets/image/HR.png';
 
 const Work = () => {
   return (
@@ -58,7 +59,6 @@ const Work = () => {
             padding: '0'
         }}
     >
-
         <SwiperSlide>
             <Box className="projectbox" sx={{
                 height: '450px',
@@ -86,7 +86,6 @@ const Work = () => {
                         }}
                     />
                 </Box>
-
 
                 <Box sx={{
                     textAlign: 'justify',
@@ -132,7 +131,8 @@ const Work = () => {
             </Box>
         </SwiperSlide>
 
- <SwiperSlide>
+        {/* SLide Two */}
+        <SwiperSlide>
             <Box className="projectbox" sx={{
                 height: '450px',
                 bgColor: '#fafafaff',
@@ -141,7 +141,7 @@ const Work = () => {
                 borderTopLeftRadius: '15px',
                 borderBottomRightRadius: '15px',
                 overflow: 'hidden'
-        }}>
+            }}>
                 <Box className="box" sx={{
                     height: '35%',
                     overflow: 'hidden'
@@ -255,7 +255,8 @@ const Work = () => {
                 </Box>
             </Box>
         </SwiperSlide>
-        
+
+        {/* Slide F0ur */}
         <SwiperSlide>
             <Box className="projectbox" sx={{
                 height: '450px',
@@ -264,22 +265,20 @@ const Work = () => {
                 border: '1px solid #363636ff',
                 borderTopLeftRadius: '15px',
                 borderBottomRightRadius: '15px',
-                marginBottom: '5px',
-                overflow: 'hidden',
-                objectFit: 'cover'
-            }}>
+                overflow: 'hidden'
+        }}>
                 <Box className="box" sx={{
                     height: '35%',
                     overflow: 'hidden'
                 }} >
                     <img 
-                        src={ballon}
+                        src={finance}
                         style={{
                             width: '100%',
                             height: '100%',
                             objectFit: 'cover'
                         }}
-                        alt="E-Commerce Customer Behavior and Sales Dataset" 
+                        alt="Financial Transaction Performance Analytics" 
                     />
                 </Box>
 
@@ -292,7 +291,144 @@ const Work = () => {
                     <Text sx={{
                         fontSize: '1rem',
                         fontWeight: '500'
-                    }}>2025 Ballon d'Or Nominees Analysis</Text>
+                    }}>Financial Transaction Performance Analytics</Text>
+
+                    <Box sx={{
+                        margin: '10px 0'
+                    }}>
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Excel
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px'
+                        }}>
+                            SQL
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px'
+                        }}>
+                            Power BI
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Financial Analysis
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            DAX
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px'
+                        }}>
+                            Database Schema Design
+                        </Text>
+                    </Box>
+                    
+                    <Text sx={{
+                        lineHeight: '1.1rem',
+                        fontSize: '.9rem',
+                        color: '#16161680'
+                        }}>
+                            Conducted a time-window transaction performance analysis for the 10:00–11:00 period, modeling transaction volume and value, fraud incidence, success and failure rates, device usage patterns, and network performance to identify operational risks, performance gaps, and opportunities for improving transaction reliability and customer experience.
+                    </Text>
+
+                    <a href="https://github.com/InsightCracker/Financial-Transaction-Performance-Fraud-Analytics">
+                        <Text sx={{
+                            fontSize: '.9rem',
+                            cursor: 'pointer',
+                            color: '#3b82f6',
+                            display: 'inline'
+                        }}>Read More 
+                        </Text>
+                    </a>
+                </Box>
+            </Box>
+        </SwiperSlide>
+
+        {/* SLide Three */}
+        <SwiperSlide>
+            <Box className="projectbox" sx={{
+                height: '450px',
+                bgColor: '#fafafaff',
+                color: '#000',
+                border: '1px solid #363636ff',
+                borderTopLeftRadius: '15px',
+                borderBottomRightRadius: '15px',
+                overflow: 'hidden'
+            }}>
+                <Box className="box" sx={{
+                    height: '35%',
+                    overflow: 'hidden'
+                }} >
+                    <img 
+                        src={ballon}
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover'
+                        }}
+                        alt="2025 Ballon d'Or Nominees Analysis" 
+                    />
+                </Box>
+
+            <Box sx={{
+                textAlign: 'justify',
+                color: '#000',
+                padding: '.8rem'
+                }}>
+            
+                <Text sx={{
+                    fontSize: '1rem',
+                    fontWeight: '500'
+                }}>2025 Ballon d'Or Nominees Analysis</Text>
 
                     <Box sx={{
                         margin: '10px 0'
@@ -383,7 +519,8 @@ const Work = () => {
                 </Box>
             </Box>
         </SwiperSlide>
-
+        
+         {/* Slide F0ur */}
         <SwiperSlide>
             <Box className="projectbox" sx={{
                 height: '450px',
@@ -499,6 +636,133 @@ const Work = () => {
                         <Text sx={{
                             fontSize: '.9rem',
                             cursor: 'pointer',
+                            color: '#3b82f6',
+                            display: 'inline'
+                        }}>Read More 
+                        </Text>
+                    </a>
+                </Box>
+            </Box>
+        </SwiperSlide>
+
+        {/* SLide Three */}
+        <SwiperSlide>
+            <Box className="projectbox" sx={{
+                height: '450px',
+                bgColor: '#fafafaff',
+                color: '#000',
+                border: '1px solid #363636ff',
+                borderTopLeftRadius: '15px',
+                borderBottomRightRadius: '15px',
+                overflow: 'hidden'
+            }}>
+                <Box className="box" sx={{
+                    height: '35%',
+                    overflow: 'hidden'
+                }} >
+                    <img 
+                        src={HR}
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover'
+                        }}
+                        alt="HR Analytics - Absenteeism" 
+                    />
+                </Box>
+
+            <Box sx={{
+                textAlign: 'justify',
+                color: '#000',
+                padding: '.8rem'
+                }}>
+            
+                <Text sx={{
+                    fontSize: '1rem',
+                    fontWeight: '500'
+                }}>HR Analytics - Absenteeism</Text>
+
+                    <Box sx={{
+                        margin: '10px 0'
+                    }}>
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Excel
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px'
+                        }}>
+                            Power BI
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Human Resources
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Critical Thinking
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px'
+                        }}>
+                            Data Visualization and Story-telling
+                        </Text>
+                    </Box>
+
+                    <Text sx={{
+                        lineHeight: '1.1rem',
+                        fontSize: '.9rem',
+                        color: '#16161680',
+                        marginBottom: '5px'
+                        }}>
+                            Performed a comprehensive HR absenteeism analysis, examining behavioral, demographic, and operational factors to uncover key drivers of employee absence, including health issues, commute challenges, age demographics, and tenure, with clear seasonal and monthly fluctuations.
+                    </Text>
+
+                    <a sx={{
+                        fontSize: '1rem',
+                    }} href="https://github.com/InsightCracker/HR-ANALYTICS-REPORT---ABSENTEEISM">
+                        <Text sx={{
+                            fontSize: '.9rem',
                             color: '#3b82f6',
                             display: 'inline'
                         }}>Read More 

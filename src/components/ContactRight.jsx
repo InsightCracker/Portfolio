@@ -11,20 +11,8 @@ const ContactRight = () => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [msg, setMsg] = useState('');
+    const [NotificationMsg, setNotificationMsg] = useState('');
 
-    // const sendEmail = () => {
-        // Email.send({
-        //     Host : "smtp.gmail.com",
-        //     Username : "mkinggrafix@gmail.com",
-        //     Password : 36190420,
-        //     To : 'oladimejimichael224@gmail.com',
-        //     From : email,
-        //     Subject : subject,
-        //     Body : msg
-        // }).then(
-        //   message => alert(message)
-        // );
-    // }
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -44,29 +32,30 @@ const ContactRight = () => {
 
         const templateParams = {
             from_name: name,
-            from_email: email,
             subject: subject,
             message: msg,
+            to_email: email
         };
 
-    emailjs
-        .send(
-            'service_izmwaaq',
-            'template_06invtx',
-            templateParams,
-            'VgMQ4RiIdq-O24UnY'
-        )
-        .then(() => {
-            alert('Email sent successfully!');
-            setName('');
-            setEmail('');
-            setSubject('');
-            setMsg('');
-        })
-        .catch((error) => {
-            console.error('EmailJS Error:', error);
-            alert('Failed to send email');
-        });
+        emailjs
+            .send(
+                'service_uqthl85',
+                'template_06invtx',
+                templateParams,
+                'VgMQ4RiIdq-O24UnY'
+            )
+            .then(() => {
+                setNotificationMsg('Email sent successfully!');
+                alert(NotificationMsg)
+                setName('');
+                setEmail('');
+                setSubject('');
+                setMsg('');
+            })
+            .catch((error) => {
+                console.error('EmailJS Error:', error);
+                alert('Failed to send email');
+            });
     };
     
   return (

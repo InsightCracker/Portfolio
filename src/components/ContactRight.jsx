@@ -39,14 +39,14 @@ const ContactRight = () => {
 
         emailjs
             .send(
-                'service_uqthl85',
-                'template_06invtx',
+                // 'service_uqthl85',
+                // 'template_06invtx',
                 templateParams,
                 'VgMQ4RiIdq-O24UnY'
             )
             .then(() => {
-                setNotificationMsg('Email sent successfully!');
-                alert(NotificationMsg)
+                alert('Email sent successfully!');
+                // alert(NotificationMsg)
                 setName('');
                 setEmail('');
                 setSubject('');
@@ -55,9 +55,15 @@ const ContactRight = () => {
             .catch((error) => {
                 console.error('EmailJS Error:', error);
                 alert('Failed to send email');
+                // setNotificationMsg('Failed to send email!');
+                // alert(NotificationMsg)
+                // setNotificationMsg('');
+                console.log(NotificationMsg)
             });
     };
     
+    const [ show, setShow ] = useState(false);
+
   return (
     <Box data-aos="fade-left" data-aos-delay='300' sx={{
         bgColor: '#f4f4f4',
@@ -73,7 +79,6 @@ const ContactRight = () => {
         }}>MESSAGE ME</Text>
 
         <Box className="form">
-            
             <form onSubmit={sendEmail}>
                 <input
                     type="text"
@@ -104,11 +109,41 @@ const ContactRight = () => {
                     rows="10"
                 />
 
-                <button type="submit" className="btn" style={{ color: '#3b82f6' }}>
+                <button 
+                    type="submit" 
+                    className="btn" 
+                    style={{ color: '#3b82f6' }} 
+                    onSubmit={() => setShow(show)}
+                    onClick={() => setShow(!show)}
+
+                >
                     SEND
                 </button>
             </form>
         </Box>
+
+        {/* <Box sx={{
+            height: '8rem',
+            width: '15rem',
+            bgColor: '#3b82f6',
+            position: 'absolute',
+            left: '15%',
+            top: '0',
+            textAlign: 'center',
+            fontWeight: '500',
+            fontSize: '1rem',
+            alignContent: 'center',
+            alignItems: 'center'
+        }} display={show ? 'block' : 'none' }>
+            <Text>{NotificationMsg}</Text>
+            <button
+                className="btn" 
+                style={{ color: '#3b82f6' }} 
+                onClick={() => setShow(!show)}
+            >
+                OK
+            </button> */}
+        {/* </Box> */}
     </Box>
   )
 }

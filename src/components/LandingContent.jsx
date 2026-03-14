@@ -48,6 +48,11 @@ const LandingContent = () => {
           fontSize: '.8rem'
         }}>Data Analyst | Accounting Graduate | Business Analyst</Text>
 
+        <Text sx={{
+          fontSize: '.8rem',
+          marginTop: '.5rem'
+        }}>🚀 Creator of DataXO – practice your data skills</Text>
+
         <Box sx={{
             margin: '1rem 0'
         }}>
@@ -93,7 +98,15 @@ const LandingContent = () => {
               border={"1px solid #3b82f6"}
               color={'#000'} 
               sx={buttonStyle}
+              marginRight={"10px"}
             >Hire Me</Text>
+          </a>
+          <a href="https://www.dataxo.cfd/">
+          <Text 
+            bgColor={"#3b82f6"} 
+            border={"1px solid #3b82f6"}
+            sx={buttonStyle}
+          >Explore DataXO</Text>
           </a>
         </Box>
     </Box>

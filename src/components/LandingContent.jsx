@@ -8,9 +8,7 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
-  FaWhatsapp,
-  FaMailBulk,
-  FaMailchimp
+  FaWhatsapp
 } from "react-icons/fa";
 
 import Typewriter from "typewriter-effect";
@@ -79,24 +77,24 @@ const LandingContent = () => {
         </Box>
 
         <Box sx={{
-            display: 'flex',
-            margin: '1rem 0'
+          display: 'flex',
+          margin: '1rem 0'
         }}>
-            <a href="#portfolio">
-            <Text 
-              bgColor={"#3b82f6"} 
+          <a href="#portfolio">
+          <Text 
+            bgColor={"#3b82f6"} 
+            border={"1px solid #3b82f6"}
+            marginRight={"10px"}
+            sx={buttonStyle}
+          >View Work</Text>
+          </a>
+          <a href="#contact">
+            <Text
               border={"1px solid #3b82f6"}
-              marginRight={"10px"}
+              color={'#000'} 
               sx={buttonStyle}
-            >View Work</Text>
-            </a>
-            <a href="#contact">
-              <Text
-                border={"1px solid #3b82f6"}
-                color={'#000'} 
-                sx={buttonStyle}
-              >Hire Me</Text>
-            </a>
+            >Hire Me</Text>
+          </a>
         </Box>
     </Box>
   )

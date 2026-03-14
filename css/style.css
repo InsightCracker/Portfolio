@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -39,14 +40,23 @@ ul {
   list-style-type: none;
 }
 
-.About .AboutImage .bottom, .About .AboutImage .top, .LandingImage .bottom, .LandingImage .top {
+.About .AboutImage .bottom, 
+.About .AboutImage .top, 
+.LandingImage .bottom, 
+.LandingImage .top {
   width: 3rem;
   height: 3rem;
   position: absolute;
   z-index: -1;
 }
 
-.contact, .resume, .portfolio, .About, .LandingPage, .navbar {
+.contact, 
+.resume, 
+.portfolio, 
+.product,
+.About, 
+.LandingPage, 
+.navbar {
   padding: 0 100px;
 }
 
@@ -59,16 +69,20 @@ ul {
   position: relative;
   overflow: hidden;
 }
+
 .App .shapes {
   position: relative;
 }
+
 .App .shapes .circle {
   display: none;
 }
+
 .App .shapes .big_circle_a {
   top: 110vh;
   right: -12rem;
 }
+
 .App .shapes .big_circle_b {
   top: 110vh;
   left: -12rem;
@@ -77,20 +91,25 @@ ul {
 .navbar .code {
   text-transform: uppercase;
 }
+
 .navbar .large_nav ul {
   display: flex;
 }
+
 .navbar .large_nav ul a {
   padding: 20px 10px 10px 10px;
   margin: 0 3px;
   font-size: 0.9rem;
 }
+
 .navbar .large_nav ul a:hover {
   background-color: #3b82f680;
 }
+
 .navbar .large_nav ul a:link {
   background-color: #3b82f680;
 }
+
 .navbar .small_nav {
   width: 10rem;
   text-align: center;
@@ -101,6 +120,7 @@ ul {
   transition: opacity 0.5s;
   z-index: 2000;
 }
+
 .navbar .small_nav li {
   padding: 20px 5px 5px 5px;
   background-color: #3b82f680;
@@ -118,13 +138,16 @@ ul {
   padding: 20px;
   z-index: 0;
 }
+
 .LandingImage img {
   width: 100%;
 }
+
 .LandingImage .top {
   left: 10px;
   top: 10px;
 }
+
 .LandingImage .bottom {
   right: 10px;
   bottom: 10px;
@@ -133,34 +156,42 @@ ul {
 .About .swiper_box {
   display: flex;
 }
+
 .About .swiper_box .info {
   margin: 15px 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
+
 .About .write_up {
   width: 500px;
   margin: 1.5rem 0;
 }
+
 .About .AboutImage {
   position: relative;
   padding: 20px;
 }
+
 .About .AboutImage img {
   width: 100%;
 }
+
 .About .AboutImage .landing_con {
   width: 300px;
 }
+
 .About .AboutImage .top {
   left: 10px;
   top: 10px;
 }
+
 .About .AboutImage .bottom {
   right: 10px;
   bottom: 10px;
 }
+
 .About .badges {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -168,10 +199,20 @@ ul {
 }
 
 .portfolio {
-  margin: 60px 0;
+  margin: 30px 0;
 }
+
 .portfolio .projects img {
   width: 100%;
+}
+
+.product {
+  margin: 30px 0;
+}
+
+.icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
 }
 
 .resume {
@@ -184,12 +225,15 @@ ul {
   gap: 10px;
   margin-top: 35px;
 }
+
 .contact ul {
   line-height: 1.7rem;
 }
+
 .contact ul li {
   font-size: 0.9rem;
 }
+
 .contact .icon {
   font-size: 1.2rem;
   margin-right: 0.5rem;
@@ -199,6 +243,7 @@ ul {
 .contactLeftBox {
   position: relative;
 }
+
 .contactLeftBox::before {
   content: "";
   width: 100%;
@@ -215,6 +260,7 @@ ul {
 .contactRightBox {
   position: relative;
 }
+
 .contactRightBox::before {
   content: "";
   width: 100%;
@@ -227,6 +273,7 @@ ul {
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
+
 .contactRightBox form input {
   width: 100%;
   font-size: 0.9rem;
@@ -254,9 +301,46 @@ ul {
   cursor: pointer;
 }
 
+.notification-popup {
+  position: absolute;    
+  top: 10px;               
+  right: 10px;            
+  background-color: #3b82f6; 
+  color: #fff;            
+  padding: 12px 20px;      
+  border-radius: 8px;      
+  font-weight: 500;       
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+  z-index: 999;           
+  opacity: 0;              
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+.notification-popup.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
 .bgStyle {
   position: relative;
 }
+
 .bgStyle::before {
   content: "";
   width: 100%;
@@ -270,94 +354,120 @@ ul {
 
 @media (max-width: 900px) {
   .navbar,
-.LandingPage,
-.About,
-.resume,
-.contact {
+  .LandingPage,
+  .About,
+  .resume,
+  .contact,
+  .product {
     padding: 0 60px;
   }
 }
+
 @media (max-width: 768px) {
   .navbar,
-.LandingPage,
-.About,
-.portfolio,
-.resume,
-.contact {
+  .LandingPage,
+  .About,
+  .portfolio,
+  .resume,
+  .contact,
+  .product {
     padding: 0 50px;
   }
+
   .LandingImage {
     display: none;
   }
+
   .large_nav {
     display: none;
   }
+
   .extension {
     display: block;
   }
+
   .About .swiper_box {
     flex-direction: column;
   }
+
   .About .write_up {
     width: 100%;
   }
+
   .About .AboutContent {
     margin-top: 2rem;
   }
+
   .contact_con {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 425px) {
   .App .shapes .circle {
     display: block;
   }
+
   .App .big_circle_a,
-.App .big_circle_b,
-.App .land_circle {
+  .App .big_circle_b,
+  .App .land_circle {
     display: none;
   }
+
   .navbar,
-.LandingPage,
-.About,
-.portfolio,
-.resume,
-.contact {
+  .LandingPage,
+  .About,
+  .portfolio,
+  .resume,
+  .contact,
+  .product {
     padding: 0 30px;
   }
+
   .LandingImage {
     display: none;
   }
+
   .About .badges {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
   .About .swiper_box .info {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 360px) {
   .navbar,
-.LandingPage,
-.About,
-.portfolio,
-.resume,
-.contact {
+  .LandingPage,
+  .About,
+  .portfolio,
+  .resume,
+  .contact,
+  .product {
     padding: 0 20px;
   }
+
   .LandingContent .greeting {
     width: 40%;
   }
+
   .LandingContent .name {
     font-size: 1.8rem;
   }
+
   .About .AboutImage .landing_con {
     z-index: -1;
     width: 250px;
   }
 }
+
 @media (max-width: 320px) {
   .About .swiper_box {
     align-items: flex-start;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+
+/*# sourceMappingURL=style.css.map */

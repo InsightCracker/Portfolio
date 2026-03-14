@@ -1,151 +1,162 @@
 import { useState } from 'react';
-
-import { 
-    Box,
-    color,
-    Text
-} from "@chakra-ui/react"
+import { Box, Text } from "@chakra-ui/react";
 
 const ContactRight = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [subject, setSubject] = useState('');
-    const [msg, setMsg] = useState('');
-    const [NotificationMsg, setNotificationMsg] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [msg, setMsg] = useState('');
+  const [notificationMsg, setNotificationMsg] = useState('');
+  const [show, setShow] = useState(false);
+  const [loading, setLoading] = useState(false);
 
+  const sendEmail = async (e) => {
+    e.preventDefault();
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    // Validate
+    if (!name || !email || !subject || !msg) {
+      setNotificationMsg("Please fill in all fields");
+      setShow(true);
+      setTimeout(() => setShow(false), 3000);
+      return;
+    }
 
-        if (!name || !email || !subject || !msg) {
-            alert("All fields are required");
-            return;
+    setLoading(true);
+
+    const data = {
+      data: [
+        {
+          name,
+          email,
+          subject,
+          message: msg,
+          date: new Date().toLocaleString()
         }
-
-        if (!/\S+@\S+\.\S+/.test(email)) {
-            alert("Please enter a valid email address");
-            return;
-        }
-
-        // Proceed with sending email
-        console.log({ name, email, subject, msg });
-
-        const templateParams = {
-            from_name: name,
-            subject: subject,
-            message: msg,
-            to_email: email
-        };
-
-        emailjs
-            .send(
-                // 'service_uqthl85',
-                // 'template_06invtx',
-                templateParams,
-                'VgMQ4RiIdq-O24UnY'
-            )
-            .then(() => {
-                alert('Email sent successfully!');
-                // alert(NotificationMsg)
-                setName('');
-                setEmail('');
-                setSubject('');
-                setMsg('');
-            })
-            .catch((error) => {
-                console.error('EmailJS Error:', error);
-                alert('Failed to send email');
-                // setNotificationMsg('Failed to send email!');
-                // alert(NotificationMsg)
-                // setNotificationMsg('');
-                console.log(NotificationMsg)
-            });
+      ]
     };
-    
-    const [ show, setShow ] = useState(false);
+
+    try {
+      const response = await fetch("https://sheetdb.io/api/v1/yqa59dqwtb8on", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+
+      if (result.created) {
+        setNotificationMsg("Message sent successfully!");
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMsg("");
+      } else {
+        setNotificationMsg("Oops! Something went wrong.");
+      }
+
+      setShow(true);
+      setTimeout(() => setShow(false), 3000);
+
+    } catch (error) {
+      setNotificationMsg("Error sending message.");
+      setShow(true);
+      setTimeout(() => setShow(false), 3000);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
-    <Box data-aos="fade-left" data-aos-delay='300' sx={{
+    <Box
+      data-aos="fade-left"
+      data-aos-delay="300"
+      sx={{
         bgColor: '#f4f4f4',
         color: '#3b82f6',
         padding: '15px',
         borderBottomLeftRadius: '15px',
-        borderTopRightRadius: '15px'
-    }} className="contactRightBox">
-        <Text sx={{
-            fontWeight: '500',
-            fontSize: '1.2rem',
-            marginBottom: '.3rem'
-        }}>MESSAGE ME</Text>
+        borderTopRightRadius: '15px',
+        position: 'relative'
+      }}
+      className="contactRightBox"
+    >
+      <Text sx={{ fontWeight: '500', fontSize: '1.2rem', marginBottom: '.3rem' }}>
+        MESSAGE ME
+      </Text>
 
-        <Box className="form">
-            <form onSubmit={sendEmail}>
-                <input
-                    type="text"
-                    placeholder="Name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                />
+      <Box className="form">
+        <form onSubmit={sendEmail}>
+          <input
+            type="text"
+            placeholder="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+          />
+          <textarea
+            placeholder="Message"
+            value={msg}
+            onChange={(e) => setMsg(e.target.value)}
+            cols="30"
+            rows="10"
+          />
+          <button
+            type="submit"
+            className="btn"
+            style={{ color: '#3b82f6' }}
+            disabled={loading}
+          >
+            {loading ? "Sending..." : "SEND"}
+          </button>
+        </form>
+      </Box>
 
-                <input
-                    type="email"
-                    placeholder="Email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-
-                <input
-                    type="text"
-                    placeholder="Subject"
-                    value={subject}
-                    onChange={(e) => setSubject(e.target.value)}
-                />
-
-                <textarea
-                    placeholder="Message"
-                    value={msg}
-                    onChange={(e) => setMsg(e.target.value)}
-                    cols="30"
-                    rows="10"
-                />
-
-                <button 
-                    type="submit" 
-                    className="btn" 
-                    style={{ color: '#3b82f6' }} 
-                    onSubmit={() => setShow(show)}
-                    onClick={() => setShow(!show)}
-
-                >
-                    SEND
-                </button>
-            </form>
-        </Box>
-
-        {/* <Box sx={{
-            height: '8rem',
-            width: '15rem',
-            bgColor: '#3b82f6',
+      {/* Success/Error Notification */}
+      {show && (
+        <Box
+          sx={{
             position: 'absolute',
-            left: '15%',
-            top: '0',
-            textAlign: 'center',
+            top: '20px',
+            right: '20px',
+            bgColor: notificationMsg.includes("successfully") ? '#22c55e' : '#ef4444',
+            color: '#fff',
+            padding: '1rem 1.5rem',
+            borderRadius: '10px',
+            boxShadow: '0 4px 10px rgba(0,0,0,0.2)',
             fontWeight: '500',
             fontSize: '1rem',
-            alignContent: 'center',
-            alignItems: 'center'
-        }} display={show ? 'block' : 'none' }>
-            <Text>{NotificationMsg}</Text>
-            <button
-                className="btn" 
-                style={{ color: '#3b82f6' }} 
-                onClick={() => setShow(!show)}
-            >
-                OK
-            </button> */}
-        {/* </Box> */}
-    </Box>
-  )
-}
+            opacity: 0,
+            transform: 'translateY(-20px)',
+            animation: 'slideIn 0.5s forwards, fadeOut 0.5s 2.5s forwards',
+            zIndex: 999
+          }}
+        >
+          {notificationMsg}
+        </Box>
+      )}
 
-export default ContactRight
+      {/* CSS Animations */}
+      <style>{`
+        @keyframes slideIn {
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeOut {
+          to { opacity: 0; transform: translateY(-20px); }
+        }
+      `}</style>
+    </Box>
+  );
+};
+
+export default ContactRight;

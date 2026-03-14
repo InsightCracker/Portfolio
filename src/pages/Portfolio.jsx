@@ -7,18 +7,6 @@ import PortfolioHead from "../components/PortfolioHead";
 import Work from "../components/Work";
 
 const Portfolio = () => {
-  const textStyle = {
-    width: '7rem',
-    fontSize: '.9rem',
-    textTransform: 'uppercase',
-    color: '#fff',
-    padding: '.5rem',
-    textAlign: 'center',
-    border: '1px solid #fff',
-    margin: '0 auto',
-    marginTop: '1.5rem'
-  }
-
   const buttonStyle = {
     width: '7rem',
     padding: "8px",
@@ -37,12 +25,6 @@ const Portfolio = () => {
     }} className="portfolio" id="portfolio">
         <PortfolioHead />
         <Work />
-
-        <Box>
-          <a href={"http://www.github.com/InsightCracker"}>
-            <Text sx={buttonStyle} marginRight={'.5rem'}>View More</Text>
-          </a>
-        </Box>
     </Box>
   )
 }

@@ -166,7 +166,7 @@ const Work = () => {
                     <Text sx={{
                         fontSize: '1rem',
                         fontWeight: '500',
-                    }}>E-commerce Sales Analysis Dashboard</Text>
+                    }}>Insurance Risk Analysis</Text>
 
                     <Box sx={{
                         margin: '10px 0'
@@ -206,7 +206,7 @@ const Work = () => {
                             marginRight: '5px',
                             marginBottom: '5px'
                         }}>
-                            Sales Analysis
+                            Insurance Analysis
                         </Text>
 
                         <Text sx={{
@@ -428,7 +428,7 @@ const Work = () => {
                 <Text sx={{
                     fontSize: '1rem',
                     fontWeight: '500'
-                }}>2025 Ballon d'Or Nominees Analysis</Text>
+                }}>Pharmacy Pulse Analysis</Text>
 
                     <Box sx={{
                         margin: '10px 0'
@@ -468,7 +468,7 @@ const Work = () => {
                             marginRight: '5px',
                             marginBottom: '5px'
                         }}>
-                            Sport Analysis
+                            Product Analysis
                         </Text>
 
                         <Text sx={{
@@ -503,7 +503,7 @@ const Work = () => {
                         color: '#16161680',
                         marginBottom: '5px'
                         }}>
-                            I analyzed the performance of 2025 Ballon d’Or male nominees by examining key metrics such as goals, assists, minutes played, and disciplinary records to identify top- and low-performing players, leading contributors, and overall performance trends.
+                            I analyzed the performance of a European pharmacy chain using the Pharmacy Pulse Dashboard by examining revenue, cost, profit, sales volume, and product and regional performance to identify key trends and high- and low-performing areas.
                     </Text>
 
                     <a sx={{

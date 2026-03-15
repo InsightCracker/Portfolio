@@ -17,7 +17,7 @@ const ProductRightBox = () => {
   }
 
   return (
-    <Box data-aos="fade-right" data-aos-delay='300' sx={{
+    <Box data-aos="fade-left" data-aos-delay='300' sx={{
         bgColor: '#f5f5f5ff',
         color: '#5f5f5fff',
         padding: '15px',

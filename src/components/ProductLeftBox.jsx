@@ -18,7 +18,6 @@ const ProductLeftBox = () => {
         sx={{
           maxWidth: '400px',
           margin: '0 auto',
-          border: '1px solid #3b82f6',
           backgroundColor: '#fff'
         }}
         className="landing_con"

@@ -241,10 +241,10 @@ const Work = () => {
                         color: '#16161680',
                         marginBottom: '5px'
                         }}>
-                            Developed an interactive Power BI dashboard to analyze E-commerce sales performance, presenting insights on total revenue (₺4.92M), customer behaviour, and order trends by product category and city.
+                            Developed an interactive Power BI dashboard to analyze insurance risk, presenting insights on total policies (50,000), premium ($3,673M), high-risk exposure (52.1%), and risk patterns across age, region, income band, and behavioral factors.
                     </Text>
 
-                    <a href="https://github.com/InsightCracker/E-Commerce-Customer-Behavior-and-Sales-Dataset">
+                    <a href="https://github.com/InsightCracker/Insurance-Risk-Analysis">
                         <Text sx={{
                             fontSize: '1rem',
                             color: '#3b82f6',

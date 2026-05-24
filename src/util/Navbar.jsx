@@ -28,6 +28,7 @@ const Navbar = () => {
       zIndex: '2000',
       paddingBottom: '.5rem'
     }} className='navbar'>
+
       <Box>
         <Text sx={{
           fontSize: '1.5rem',
@@ -53,6 +54,23 @@ const Navbar = () => {
           <a href="#contact">
             <li>Contact</li>
           </a>
+
+          <Box
+            as="button"
+            className="download-btn"
+            sx={{
+              backgroundColor: '#fff',
+              color: '#3b82f6',
+              padding: '0.5rem 1rem',
+              margin: 'auto',
+              borderRadius: '5px',
+              cursor: 'pointer',
+              border: 'none',
+              _hover: { backgroundColor: '#e2e8f0' }
+            }}
+          >
+            Download CV
+          </Box>
         </ul>
       </Box>
 

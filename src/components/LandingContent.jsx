@@ -48,11 +48,6 @@ const LandingContent = () => {
           fontSize: '.8rem'
         }}>Data Analyst & Financial Insights Specialist</Text>
 
-        {/* <Text>
-          Turning complex financial data into clear, actionable business decisions. 
-          Accounting graduate with strong expertise in Excel, SQL, Power BI, and building impactful analytics solutions for fintech and finance.
-        </Text> */}
-
         <Text sx={{
           fontSize: '.8rem',
           marginTop: '.5rem'

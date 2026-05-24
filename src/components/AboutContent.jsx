@@ -52,7 +52,7 @@ const AboutContent = () => {
                             margin: '.5rem 0',
                             borderTopLeftRadius: '15px',
                             borderBottomRightRadius: '15px',
-                            lineHeight: '1.5rem'
+                            lineHeight: '1rem'
                         }}>
                         <Text 
                             width={'7rem'}
@@ -61,10 +61,30 @@ const AboutContent = () => {
 
                         <Text data-aos="fade-left" className="write_up" sx={{
                             fontSize: '.8rem',
-                            lineHeight: '1.3rem',
+                            lineHeight: '1.2rem',
                             textAlign: 'justify',
                             color: '#5f5f5fff'
-                        }}>Dedicated and detail-oriented Financial & Business Data Analyst with strong proficiency in Excel, Power BI, and SQL. Experienced in collecting, analyzing, and interpreting complex datasets to support informed business decisions. Skilled in developing interactive dashboards, automating reports, and performing data cleansing and transformation. Adapt at identifying trends, generating actionable insights, and clearly communicating findings to both technical and non-technical stakeholders. Passionate about leveraging data to support strategic objectives and improve organizational performance.</Text>
+                        }}>
+                            I’m a detail-oriented Accounting graduate (B.Sc., Second Class Upper) with a strong passion for data analytics and financial insight generation.
+                        </Text>
+
+                        <Text data-aos="fade-left" className="write_up" sx={{
+                            fontSize: '.8rem',
+                            lineHeight: '1.2rem',
+                            textAlign: 'justify',
+                            color: '#5f5f5fff'
+                        }}>
+                            With experience in financial reporting, reconciliation, and budgeting, combined with hands-on skills in SQL, Power BI, and data storytelling, I help turn financial data into actionable insights that support better decision-making.
+                        </Text>
+
+                        <Text data-aos="fade-left" className="write_up" sx={{
+                            fontSize: '.8rem',
+                            lineHeight: '1.2rem',
+                            textAlign: 'justify',
+                            color: '#5f5f5fff'
+                        }}>
+                            I currently teach Data Analytics at Codar Tech Africa, while building advanced skills in Python and AI-driven financial modeling, with a focus on solving real-world problems in fraud detection, risk management, and forecasting.
+                        </Text>
                     </Box>
                 </Box>
             </SwiperSlide>

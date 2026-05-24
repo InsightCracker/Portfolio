@@ -21,7 +21,7 @@ const ContactRight = () => {
             marginLeft: '.3rem',
             marginBottom: '.3rem',
             display: 'inline',
-        }}>Visualization</Text>
+        }}>Fianace Domain</Text>
 
         <Box sx={{
             margin: '10px 0'
@@ -34,9 +34,9 @@ const ContactRight = () => {
                 display: 'inline-block',
                 borderRadius: '10px',
                 marginRight: '5px',
-                marginBottom: '5px'
+                marginBottom: '.5rem'
             }}>
-                Power BI
+                Financial Reporting & Reconciliation
             </Text>
 
             <Text sx={{
@@ -46,9 +46,10 @@ const ContactRight = () => {
                 color: '#000',
                 display: 'inline-block',
                 borderRadius: '10px',
-                marginRight: '5px'
+                marginRight: '5px',
+                marginBottom: '.5rem'
             }}>
-                Excel
+                IFRS Compliance
             </Text>
 
             <Text sx={{
@@ -58,9 +59,22 @@ const ContactRight = () => {
                 color: '#000',
                 display: 'inline-block',
                 borderRadius: '10px',
-                marginRight: '5px'
+                marginRight: '5px',
+                marginBottom: '.5rem'
             }}>
-                CSS3
+                Risk Analysis & Fraud Detection
+            </Text>
+
+            <Text sx={{
+                padding: '.3rem .8rem',
+                fontSize: '.8rem',
+                bgColor: '#b1b1b180',
+                color: '#000',
+                display: 'inline-block',
+                borderRadius: '10px',
+                marginRight: '5px',
+            }}>
+                Budgeting & Performance Analysis
             </Text>
         </Box>
         

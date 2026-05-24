@@ -19,7 +19,8 @@ const SkillContent = () => {
         textAlign: 'center',
         margin: '0 auto',
         marginBottom: '1rem',
-        borderRadius: '.5rem'
+        borderRadius: '.5rem',
+        fontWeight: '500'
     }
   return (
     <Box sx={{

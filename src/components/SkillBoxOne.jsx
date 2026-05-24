@@ -22,7 +22,7 @@ const ContactLeft = () => {
             marginLeft: '.3rem',
             marginBottom: '.3rem',
             display: 'inline',
-        }}>Database</Text>
+        }}>Data Analytics & Visualization</Text>
 
         <Box sx={{
             margin: '10px 0'
@@ -35,7 +35,20 @@ const ContactLeft = () => {
                 display: 'inline-block',
                 borderRadius: '10px',
                 marginRight: '5px',
-                marginBottom: '5px'
+                marginBottom: '.5rem'
+            }}>
+                Advanced Excel
+            </Text>
+
+            <Text sx={{
+                padding: '.3rem .8rem',
+                fontSize: '.8rem',
+                bgColor: '#ccdbf180',
+                color: '#222222ff',
+                display: 'inline-block',
+                borderRadius: '10px',
+                marginRight: '5px',
+                marginBottom: '.5rem'
             }}>
                 SQL
             </Text>
@@ -49,7 +62,7 @@ const ContactLeft = () => {
                 borderRadius: '10px',
                 marginRight: '5px'
             }}>
-                DAX
+                Power BI
             </Text>
         </Box>
     </Box>

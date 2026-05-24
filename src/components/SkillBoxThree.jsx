@@ -20,7 +20,7 @@ const ContactLeft = () => {
             marginLeft: '.3rem',
             marginBottom: '.3rem',
             display: 'inline'
-        }}>Soft Skills</Text>
+        }}>Programming & Tools</Text>
 
         <Box sx={{
             margin: '10px 0'
@@ -33,9 +33,35 @@ const ContactLeft = () => {
                 display: 'inline-block',
                 borderRadius: '10px',
                 marginRight: '5px',
-                marginBottom: '5px'
+                marginBottom: '.5rem'
             }}>
-                Communication
+                Python (Pandas, Scikit-learn)
+            </Text>
+
+            <Text sx={{
+                padding: '.3rem .8rem',
+                fontSize: '.8rem',
+                bgColor: '#ccdbf180',
+                color: '#222222ff',
+                display: 'inline-block',
+                borderRadius: '10px',
+                marginRight: '5px',
+                marginBottom: '.5rem'
+            }}>
+                JavaScript, React, HTML/CSS
+            </Text>
+
+            <Text sx={{
+                padding: '.3rem .8rem',
+                fontSize: '.8rem',
+                bgColor: '#ccdbf180',
+                color: '#222222ff',
+                display: 'inline-block',
+                borderRadius: '10px',
+                marginRight: '5px',
+                marginBottom: '.5rem'
+            }}>
+                Git & Version Control
             </Text>
 
             <Text sx={{
@@ -47,19 +73,7 @@ const ContactLeft = () => {
                 borderRadius: '10px',
                 marginRight: '5px'
             }}>
-                Teamwork
-            </Text>
-
-            <Text sx={{
-                padding: '.3rem .8rem',
-                fontSize: '.8rem',
-                bgColor: '#ccdbf180',
-                color: '#222222ff',
-                display: 'inline-block',
-                borderRadius: '10px',
-                marginRight: '5px'
-            }}>
-                Critical Thinking
+                QuickBooks
             </Text>
         </Box>
     </Box>

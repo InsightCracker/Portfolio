@@ -21,7 +21,7 @@ const ContactRight = () => {
             marginLeft: '.3rem',
             marginBottom: '.3rem',
             display: 'inline',
-        }}>Other Tools</Text>
+        }}>Soft Skills</Text>
 
         <Box sx={{
             margin: '10px 0'
@@ -34,9 +34,22 @@ const ContactRight = () => {
                 display: 'inline-block',
                 borderRadius: '10px',
                 marginRight: '5px',
-                marginBottom: '5px'
+                marginBottom: '.5rem'
             }}>
-                Powerpoint
+                Data Storytelling
+            </Text>
+
+            <Text sx={{
+                padding: '.3rem .8rem',
+                fontSize: '.8rem',
+                bgColor: '#b1b1b180',
+                color: '#000',
+                display: 'inline-block',
+                borderRadius: '10px',
+                marginRight: '5px',
+                marginBottom: '.5rem'
+            }}>
+                Problem Solving
             </Text>
 
             <Text sx={{
@@ -48,43 +61,7 @@ const ContactRight = () => {
                 borderRadius: '10px',
                 marginRight: '5px'
             }}>
-                MS Word
-            </Text>
-
-            <Text sx={{
-                padding: '.3rem .8rem',
-                fontSize: '.8rem',
-                bgColor: '#b1b1b180',
-                color: '#000',
-                display: 'inline-block',
-                borderRadius: '10px',
-                marginRight: '5px'
-            }}>
-                ChatGPT
-            </Text>
-
-            <Text sx={{
-                padding: '.3rem .8rem',
-                fontSize: '.8rem',
-                bgColor: '#b1b1b180',
-                color: '#000',
-                display: 'inline-block',
-                borderRadius: '10px',
-                marginRight: '5px'
-            }}>
-                Git/GitHub
-            </Text>
-
-            <Text sx={{
-                padding: '.3rem .8rem',
-                fontSize: '.8rem',
-                bgColor: '#b1b1b180',
-                color: '#000',
-                display: 'inline-block',
-                borderRadius: '10px',
-                marginRight: '5px'
-            }}>
-                HTML5
+                Cross-functional Collaboration
             </Text>
         </Box>
         

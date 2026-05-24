@@ -46,12 +46,17 @@ const LandingContent = () => {
         </Heading>
         <Text sx={{
           fontSize: '.8rem'
-        }}>Data Analyst | Accounting Graduate | Business Analyst</Text>
+        }}>Data Analyst & Financial Insights Specialist</Text>
+
+        {/* <Text>
+          Turning complex financial data into clear, actionable business decisions. 
+          Accounting graduate with strong expertise in Excel, SQL, Power BI, and building impactful analytics solutions for fintech and finance.
+        </Text> */}
 
         <Text sx={{
           fontSize: '.8rem',
           marginTop: '.5rem'
-        }}>🚀 Creator of DataXO – practice your data skills</Text>
+        }}>🚀 Creator of DataEre – practice your data skills</Text>
 
         <Box sx={{
             margin: '1rem 0'

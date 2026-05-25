@@ -7,16 +7,16 @@ import ProductLeftBox from "../components/ProductLeftBox";
 import ProductRightBox from "../components/ProductRightBox";
 
 const textStyle = {
-    width: '10rem',
-    fontSize: '.9rem',
-    backgroundColor: '#3b82f6',
-    textTransform: 'uppercase',
-    color: '#fff',
-    padding: '1rem .5rem',
-    textAlign: 'center',
-    margin: '0 auto',
-    marginBottom: '1rem',
-    borderRadius: '.5rem'
+        width: '10rem',
+        fontSize: '.9rem',
+        backgroundColor: '#3b82f6',
+        color: '#fff',
+        padding: '1rem .5rem',
+        textAlign: 'center',
+        margin: '0 auto',
+        marginBottom: '1rem',
+        borderRadius: '.5rem',
+        fontWeight: '500'
     }
 
 
@@ -27,7 +27,7 @@ const Product = () => {
         margin: '60px 0'
     }} className="product" id="">
         <Box>
-            <Text className="bgStyle" sx={textStyle}>DataXO</Text>
+            <Text className="bgStyle" sx={textStyle}>DataEre</Text>
         </Box>
 
         <Box className="contact_con">

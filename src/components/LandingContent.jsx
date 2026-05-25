@@ -1,7 +1,7 @@
 import { 
-    Box,
-    Text,
-    Heading 
+  Box,
+  Text,
+  Heading 
 } from "@chakra-ui/react";
 import { 
   FaTwitter, 

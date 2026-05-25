@@ -2,7 +2,7 @@ import {
   Box
 } from "@chakra-ui/react";
 
-import dataox from "../assets/image/dataox.png"
+import dataox from "../assets/image/dataere.png"
 
 
 

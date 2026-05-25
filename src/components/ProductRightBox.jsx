@@ -47,7 +47,7 @@ const ProductRightBox = () => {
             border={"1px solid #3b82f6"}
             marginRight={"10px"}
             sx={buttonStyle}
-          >Visit DataXO</Text>
+          >Visit DataEre</Text>
           </a>
           <a href="https://github.com/InsightCracker/dataxo">
             <Text

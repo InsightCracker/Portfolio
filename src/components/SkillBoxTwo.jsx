@@ -10,7 +10,7 @@ const ContactRight = () => {
     <Box data-aos="fade-left" data-aos-delay='300' sx={{
         bgColor: '#f4f4f4',
         color: '#3b82f6',
-        padding: '20px 15px 3rem 15px',
+        padding: '20px 15px 1rem 15px',
         margin: '.5rem 0',
         borderBottomLeftRadius: '15px',
         borderTopRightRadius: '15px'

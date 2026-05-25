@@ -61,7 +61,7 @@ const Work = () => {
     >
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '450px',
+                height: '22rem',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -78,7 +78,7 @@ const Work = () => {
                 >
                     <img
                         src={dataclean}
-                        alt="E-Commerce Customer Behavior and Sales Dataset"
+                        alt="Data Cleaning"
                         style={{
                             width: '100%',
                             height: '100%',
@@ -98,33 +98,81 @@ const Work = () => {
                         fontWeight: '500'
                     }}>Data Cleaning and Validation</Text>
 
-                    <Text sx={{
+                    <Box sx={{
+                        margin: '1rem 0'
+                    }}>
+                        <Text sx={{
                             padding: '.3rem .8rem',
                             fontSize: '.8rem',
                             bgColor: '#ccdbf180',
                             color: '#3b82f6',
                             display: 'inline-block',
                             borderRadius: '10px',
-                            margin: '10px 0'
+                            marginRight: '5px',
+                            marginBottom: '5px'
                         }}>
                             Excel
                         </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Filtering
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Sorting
+                        </Text>
+
+                        <Text sx={{
+                            padding: '.3rem .8rem',
+                            fontSize: '.8rem',
+                            bgColor: '#ccdbf180',
+                            color: '#3b82f6',
+                            display: 'inline-block',
+                            borderRadius: '10px',
+                            marginRight: '5px',
+                            marginBottom: '5px'
+                        }}>
+                            Conditional Formatting
+                        </Text>
+                    </Box>
                     
                     <Text sx={{
                         lineHeight: '1.1rem',
                         fontSize: '.9rem',
                         color: '#16161680',
-                        marginBottom: '5px'
-                        }}>
-                            I completed a data cleaning project that involved handling missing and invalid values, removing duplicates, and standardizing date formats, resulting in improved data accuracy and reliability for effective analysis.
+                        marginBottom: '1rem'
+                    }}>
+                        I completed a data cleaning project that involved handling missing and invalid values, removing duplicates, and standardizing date formats, resulting in improved data accuracy and reliability for effective analysis.
                     </Text>
 
-                    <a href="https://github.com/InsightCracker/E-Commerce-Customer-Behavior-and-Sales-Dataset">
+                    <a href="https://github.com/InsightCracker/Data-Cleaning---Excel">
                         <Text sx={{
                             fontSize: '.9rem',
                             color: '#3b82f6',
-                            display: 'inline'
-                        }}>Read More 
+                            display: 'inline',
+                            border: '2px Solid #3b82f6',
+                            padding: '.5rem',
+                            borderRadius: '.2rem'
+                        }}>
+                            GitHub Repo
                         </Text>
                     </a>
                 </Box>
@@ -134,7 +182,7 @@ const Work = () => {
         {/* SLide Two */}
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '450px',
+                height: '22rem',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -153,7 +201,7 @@ const Work = () => {
                             height: '100%',
                             objectFit: 'cover'
                         }}
-                        alt="E-Commerce Customer Behavior and Sales Dataset" 
+                        alt="Insurance Risk Analysis" 
                     />
                 </Box>
 
@@ -169,7 +217,7 @@ const Work = () => {
                     }}>Insurance Risk Analysis</Text>
 
                     <Box sx={{
-                        margin: '10px 0'
+                        margin: '1rem 0'
                     }}>
                         <Text sx={{
                             padding: '.3rem .8rem',
@@ -239,7 +287,7 @@ const Work = () => {
                         lineHeight: '1.1rem',
                         fontSize: '.9rem',
                         color: '#16161680',
-                        marginBottom: '5px'
+                        marginBottom: '1rem'
                         }}>
                             Developed an interactive Power BI dashboard to analyze insurance risk, presenting insights on total policies (50,000), premium ($3,673M), high-risk exposure (52.1%), and risk patterns across age, region, income band, and behavioral factors.
                     </Text>
@@ -248,8 +296,12 @@ const Work = () => {
                         <Text sx={{
                             fontSize: '1rem',
                             color: '#3b82f6',
-                            display: 'inline'
-                        }}>Read More 
+                            display: 'inline',
+                            border: '2px Solid #3b82f6',
+                            padding: '.5rem',
+                            borderRadius: '.2rem'
+                        }}>
+                            GitHub Repo
                         </Text>
                     </a>
                 </Box>
@@ -259,7 +311,7 @@ const Work = () => {
         {/* Slide F0ur */}
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '450px',
+                height: '22rem',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -294,7 +346,7 @@ const Work = () => {
                     }}>Financial Transaction Performance Analytics</Text>
 
                     <Box sx={{
-                        margin: '10px 0'
+                        margin: '1rem 0'
                     }}>
                         <Text sx={{
                             padding: '.3rem .8rem',
@@ -375,7 +427,8 @@ const Work = () => {
                     <Text sx={{
                         lineHeight: '1.1rem',
                         fontSize: '.9rem',
-                        color: '#16161680'
+                        color: '#16161680',
+                        marginBottom: '1rem'
                         }}>
                             Conducted a time-window transaction performance analysis, modeling transaction volume and value, fraud rates, success and failure rates, and network performance to identify operational risks and improvement opportunities.
                     </Text>
@@ -385,8 +438,12 @@ const Work = () => {
                             fontSize: '.9rem',
                             cursor: 'pointer',
                             color: '#3b82f6',
-                            display: 'inline'
-                        }}>Read More 
+                            display: 'inline',
+                            border: '2px Solid #3b82f6',
+                            padding: '.5rem',
+                            borderRadius: '.2rem'
+                        }}>
+                            GitHub Repo
                         </Text>
                     </a>
                 </Box>
@@ -396,7 +453,7 @@ const Work = () => {
         {/* SLide Three */}
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '450px',
+                height: '22rem',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -431,7 +488,7 @@ const Work = () => {
                 }}>Pharmacy Pulse Analysis</Text>
 
                     <Box sx={{
-                        margin: '10px 0'
+                        margin: '1rem 0'
                     }}>
                         <Text sx={{
                             padding: '.3rem .8rem',
@@ -501,7 +558,7 @@ const Work = () => {
                         lineHeight: '1.1rem',
                         fontSize: '.9rem',
                         color: '#16161680',
-                        marginBottom: '5px'
+                        marginBottom: '1rem'
                         }}>
                             I analyzed the performance of a European pharmacy chain using the Pharmacy Pulse Dashboard by examining revenue, cost, profit, sales volume, and product and regional performance to identify key trends and high- and low-performing areas.
                     </Text>
@@ -512,8 +569,12 @@ const Work = () => {
                         <Text sx={{
                             fontSize: '.9rem',
                             color: '#3b82f6',
-                            display: 'inline'
-                        }}>Read More 
+                            display: 'inline',
+                            border: '2px Solid #3b82f6',
+                            padding: '.5rem',
+                            borderRadius: '.2rem'
+                        }}>
+                            GitHub Repo
                         </Text>
                     </a>
                 </Box>
@@ -523,7 +584,7 @@ const Work = () => {
          {/* Slide F0ur */}
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '450px',
+                height: '22rem',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -558,7 +619,7 @@ const Work = () => {
                     }}>US Debt to Penny Analysis</Text>
 
                     <Box sx={{
-                        margin: '10px 0'
+                        margin: '1rem 0'
                     }}>
                         <Text sx={{
                             padding: '.3rem .8rem',
@@ -627,7 +688,8 @@ const Work = () => {
                     <Text sx={{
                         lineHeight: '1.1rem',
                         fontSize: '.9rem',
-                        color: '#16161680'
+                        color: '#16161680',
+                        marginBottom: '1rem'
                         }}>
                             Designed a relational database schema to analyze U.S. debt to penny, modeling debt instruments, Growth rate.
                     </Text>
@@ -637,8 +699,12 @@ const Work = () => {
                             fontSize: '.9rem',
                             cursor: 'pointer',
                             color: '#3b82f6',
-                            display: 'inline'
-                        }}>Read More 
+                            display: 'inline',
+                            border: '2px Solid #3b82f6',
+                            padding: '.5rem',
+                            borderRadius: '.2rem'
+                        }}>
+                            GitHub Repo
                         </Text>
                     </a>
                 </Box>
@@ -648,7 +714,7 @@ const Work = () => {
         {/* SLide Three */}
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '450px',
+                height: '22rem',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -683,7 +749,7 @@ const Work = () => {
                 }}>HR Analytics - Absenteeism</Text>
 
                     <Box sx={{
-                        margin: '10px 0'
+                        margin: '1rem 0'
                     }}>
                         <Text sx={{
                             padding: '.3rem .8rem',
@@ -753,7 +819,7 @@ const Work = () => {
                         lineHeight: '1.1rem',
                         fontSize: '.9rem',
                         color: '#16161680',
-                        marginBottom: '5px'
+                        marginBottom: '1rem'
                         }}>
                             Performed a comprehensive HR absenteeism analysis, examining behavioral, demographic, and operational factors to uncover key drivers of employee absence, including health issues, commute challenges, age demographics, and tenure, with clear seasonal and monthly fluctuations.
                     </Text>
@@ -764,8 +830,12 @@ const Work = () => {
                         <Text sx={{
                             fontSize: '.9rem',
                             color: '#3b82f6',
-                            display: 'inline'
-                        }}>Read More 
+                            display: 'inline',
+                            border: '2px Solid #3b82f6',
+                            padding: '.5rem',
+                            borderRadius: '.2rem'
+                        }}>
+                            Github Repo
                         </Text>
                     </a>
                 </Box>

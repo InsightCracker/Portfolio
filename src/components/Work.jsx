@@ -56,12 +56,13 @@ const Work = () => {
 
 
         style={{
-            padding: '0'
+            padding: '0',
+            paddingBottom: '2rem'
         }}
     >
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '22rem',
+                minH: '22rem',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -90,7 +91,8 @@ const Work = () => {
                 <Box sx={{
                     textAlign: 'justify',
                     color: '#000',
-                    padding: '.8rem'
+                    padding: '.8rem',
+                    paddingBottom: '1.5rem'
                     }}>
                 
                     <Text sx={{
@@ -182,7 +184,7 @@ const Work = () => {
         {/* SLide Two */}
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '22rem',
+                minH: '22rem',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -208,7 +210,8 @@ const Work = () => {
                 <Box sx={{
                     textAlign: 'justify',
                     color: '#000',
-                    padding: '.8rem'
+                    padding: '.8rem',
+                    paddingBottom: '1.5rem'
                     }}>
                 
                     <Text sx={{
@@ -311,7 +314,7 @@ const Work = () => {
         {/* Slide F0ur */}
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '22rem',
+                minH: '22rem',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -337,7 +340,8 @@ const Work = () => {
                 <Box sx={{
                     textAlign: 'justify',
                     color: '#000',
-                    padding: '.8rem'
+                    padding: '.8rem',
+                    paddingBottom: '1.5rem'
                     }}>
                 
                     <Text sx={{
@@ -453,7 +457,7 @@ const Work = () => {
         {/* SLide Three */}
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '22rem',
+                minH: '22rem',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -477,9 +481,10 @@ const Work = () => {
                 </Box>
 
             <Box sx={{
-                textAlign: 'justify',
-                color: '#000',
-                padding: '.8rem'
+                    textAlign: 'justify',
+                    color: '#000',
+                    padding: '.8rem',
+                    paddingBottom: '1.5rem'
                 }}>
             
                 <Text sx={{
@@ -584,7 +589,7 @@ const Work = () => {
          {/* Slide F0ur */}
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '22rem',
+                minH: '22rem',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -608,9 +613,10 @@ const Work = () => {
                 </Box>
 
                 <Box sx={{
-                    textAlign: 'justify',
-                    color: '#000',
-                    padding: '.8rem'
+                        textAlign: 'justify',
+                        color: '#000',
+                        padding: '.8rem',
+                        paddingBottom: '1.5rem'
                     }}>
                 
                     <Text sx={{
@@ -714,7 +720,7 @@ const Work = () => {
         {/* SLide Three */}
         <SwiperSlide>
             <Box className="projectbox" sx={{
-                height: '22rem',
+                minH: '22rem',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -738,9 +744,10 @@ const Work = () => {
                 </Box>
 
             <Box sx={{
-                textAlign: 'justify',
-                color: '#000',
-                padding: '.8rem'
+                    textAlign: 'justify',
+                    color: '#000',
+                    padding: '.8rem',
+                    paddingBottom: '1.5rem'
                 }}>
             
                 <Text sx={{

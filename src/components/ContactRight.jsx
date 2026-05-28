@@ -36,7 +36,7 @@ const ContactRight = () => {
     };
 
     try {
-      const response = await fetch("https://sheetdb.io/api/v1/yqa59dqwtb8on", {
+      const response = await fetch("https://sheetdb.io/api/v1/mgdm35x1cpcxx", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)

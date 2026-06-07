@@ -232,7 +232,7 @@ const ContentPanel = () => {
     >
       {/* Eyebrow label */}
       <Flex align="center" gap="8px" mb="12px">
-        <Box sx={{ width: "28px", height: "2px", borderRadius: "1px", background: "#3b82f6" }} />
+        <Box sx={{ width: "18px", height: "2px", borderRadius: "1px", background: "#3b82f6" }} />
         <Text sx={{ fontFamily: "'DM Mono', monospace", fontSize: "0.68rem", fontWeight: "600", letterSpacing: "0.2em", textTransform: "uppercase", color: "#3b82f6" }}>
           Featured Build
         </Text>

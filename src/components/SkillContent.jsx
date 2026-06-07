@@ -34,7 +34,7 @@ const CARDS = [
     id: "analytics",
     icon: <IconChart />,
     title: "Data Analytics & Visualization",
-    skills: ["Advanced Excel", "SQL", "Power BI"],
+    skills: ["Advanced Excel", "SQL", "Power BI", "Python"],
     variant: "blue",
     delay: 60,
     corner: "left",
@@ -44,7 +44,7 @@ const CARDS = [
     icon: <IconBank />,
     title: "Finance Domain",
     skills: [
-      "Financial Reporting & Reconciliation",
+      "Financial Reporting",
       "IFRS Compliance",
       "Risk Analysis & Fraud Detection",
       "Budgeting & Performance Analysis",

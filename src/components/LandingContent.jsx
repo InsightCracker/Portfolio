@@ -163,8 +163,8 @@ const LandingContent = () => {
         {/* Typewriter */}
         <Heading
           sx={{
-            fontSize: { base: "1.5rem", md: "2.2rem" },
-            fontWeight: "500",
+            fontSize: { base: "1.3rem", md: "2.2rem" },
+            fontWeight: "700",
             margin: ".4rem 0 .6rem",
             minHeight: "3rem",
             color: "#111827",

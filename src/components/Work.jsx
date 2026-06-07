@@ -50,7 +50,7 @@ const PROJECTS = [
     title: "Data Cleaning & Validation",
     tags: ["Excel", "Filtering", "Sorting", "Conditional Formatting"],
     description:
-      "Handled missing and invalid values, removed duplicates, and standardized date formats — improving data accuracy and reliability for downstream analysis.",
+      "Handled missing and invalid values, removed duplicates, and standardized date formats. Improving data accuracy and reliability for downstream analysis.",
     github: "https://github.com/InsightCracker/Data-Cleaning---Excel",
     accent: "#3b82f6",
   },
@@ -70,7 +70,7 @@ const PROJECTS = [
     title: "Financial Transaction Analytics",
     tags: ["Excel", "SQL", "Power BI", "DAX", "Financial Analysis", "DB Schema"],
     description:
-      "Time-window analysis of transaction volume, fraud rates, success/failure rates, and network performance — surfacing operational risks and improvement opportunities.",
+      "Time-window analysis of transaction volume, fraud rates, success/failure rates, and network performance. Surfacing operational risks and improvement opportunities.",
     github: "https://github.com/InsightCracker/Financial-Transaction-Performance-Fraud-Analytics",
     accent: "#6366f1",
   },
@@ -246,7 +246,7 @@ const ProjectCard = ({ project, index }) => {
             color: "#475569",
             flex: 1,
             marginBottom: "18px",
-            textAlign: "left"
+            textAlign: "justify"
           }}
         >
           {project.description}

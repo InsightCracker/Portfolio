@@ -60,8 +60,7 @@ const AboutContent = () => {
   const SlideIcon = slides[current].icon;
 
   return (
-    <Box sx={{ paddingBottom: "30px" }}>
-
+    <Box sx={{ p: "50px 0"}}>
       {/* ── Icon Header ── */}
       <Box
         sx={{
@@ -352,7 +351,7 @@ const AboutContent = () => {
                 <HiOutlineLightBulb />
               </Box>
               <Text sx={{ fontSize: ".78rem", color: "#15803d", fontWeight: "500" }}>
-                Graduated with Second Class Upper. Goop academic standing
+                Graduated with Second Class Upper. Strong academic standing
               </Text>
             </Box>
           </Box>

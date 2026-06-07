@@ -6,8 +6,8 @@ import Navbar from './util/Navbar';
 import LandingPage from './pages/LandingPage';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
-// import Product from './pages/Product';
-// import Contact from './pages/Contact';
+import Product from './pages/Product';
+import Contact from './pages/Contact';
 import SkillContent from './pages/Skillls';
 import Footer from './util/Footer';
 
@@ -23,8 +23,8 @@ function App() {
         <About />
         <SkillContent />
         <Portfolio />
-        {/* <Product /> */}
-        {/* <Contact /> */}
+        <Product />
+        <Contact />
         <Footer />
     </div>
   )

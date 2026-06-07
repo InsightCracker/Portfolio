@@ -3,7 +3,6 @@ import {
     Text 
   } from "@chakra-ui/react";
 
-import PortfolioHead from "../components/PortfolioHead";
 import Work from "../components/Work";
 
 const Portfolio = () => {
@@ -23,7 +22,6 @@ const Portfolio = () => {
         h: '100%',
         textAlign: 'center'
     }} className="portfolio" id="portfolio">
-        <PortfolioHead />
         <Work />
     </Box>
   )

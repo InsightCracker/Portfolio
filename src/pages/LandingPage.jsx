@@ -7,7 +7,6 @@ import {
   FaArrowCircleUp
 } from "react-icons/fa";
 
-import LandingImage from "../components/LandingImage";
 import LandingContent from "../components/LandingContent";
 
 const LandingPage = () => {
@@ -21,7 +20,6 @@ const LandingPage = () => {
         paddingTop: '30px'
     }}>
         <LandingContent />
-        <LandingImage />
 
         <a href={"#"}>
           <Text sx={{

@@ -7,6 +7,8 @@ import {
   HiOutlineCode,
   HiOutlineLightBulb,
   HiOutlineDatabase,
+  HiArrowLeft,
+  HiArrowRight
 } from "react-icons/hi";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { MdOutlineSchool, MdOutlineLocationOn } from "react-icons/md";
@@ -147,6 +149,7 @@ const AboutContent = () => {
                 sx={{
                   display: "flex",
                   alignItems: "flex-start",
+                  flexDir: { base: "column", md: "row"},
                   gap: "12px",
                   marginBottom: i < aboutPoints.length - 1 ? "14px" : 0,
                   padding: "12px 14px",
@@ -395,7 +398,7 @@ const AboutContent = () => {
             },
           }}
         >
-          ←
+          <HiArrowLeft />
         </Box>
 
         {/* Dot indicators */}
@@ -444,7 +447,7 @@ const AboutContent = () => {
             },
           }}
         >
-          →
+          <HiArrowRight />
         </Box>
       </Box>
 

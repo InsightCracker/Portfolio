@@ -326,6 +326,7 @@ const SectionHeader = () => {
 // ── Main export 
 const SkillsSection = () => (
   <Box
+    id="skill"
     sx={{
       minHeight: "100vh",
       background: "linear-gradient(160deg, #f0f6ff 0%, #fafcff 60%, #e8f0fe 100%)",

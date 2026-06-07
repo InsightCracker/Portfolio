@@ -1,30 +1,24 @@
-import { 
-    Box,
-    Text 
-  } from "@chakra-ui/react";
-
+import { Box } from "@chakra-ui/react";
 import Work from "../components/Work";
 
-const Portfolio = () => {
-  const buttonStyle = {
-    width: '7rem',
-    padding: "8px",
-    cursor: 'pointer',
-    fontSize: '.7rem',
-    border: '1px solid #fff',
-    textAlign: 'center',
-    margin: '0 auto',
-    marginTop: '.5rem'
-  }
-
-  return (
-    <Box sx={{
-        h: '100%',
-        textAlign: 'center'
-    }} className="portfolio" id="portfolio">
-        <Work />
+const Portfolio = () => (
+  <Box
+    className="portfolio"
+    id="portfolio"
+    sx={{
+      width: "100%",
+      minHeight: "100vh",
+      background: "linear-gradient(165deg, #f8faff 0%, #fff 50%, #f0f6ff 100%)",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      // padding: { base: "80px 20px 60px", md: "90px 48px 60px" },
+    }}
+  >
+    <Box sx={{ width: "100%" }}>
+      <Work />
     </Box>
-  )
-}
+  </Box>
+);
 
-export default Portfolio
+export default Portfolio;

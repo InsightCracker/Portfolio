@@ -100,7 +100,7 @@ const PROJECTS = [
     title: "HR Analytics — Absenteeism",
     tags: ["Excel", "Power BI", "Human Resources", "Critical Thinking", "Data Visualization"],
     description:
-      "Comprehensive absenteeism study examining behavioral, demographic, and operational drivers — including health, commute, age, tenure, and seasonal fluctuations.",
+      "Comprehensive absenteeism study examining behavioral, demographic, and operational drivers including health, commute, age, tenure, and seasonal fluctuations.",
     github: "https://github.com/InsightCracker/HR-ANALYTICS-REPORT---ABSENTEEISM",
     accent: "#ec4899",
   },
@@ -355,8 +355,6 @@ const Work = () => (
     }}
   >
     <style>{`
-      @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Mono:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap');
-
       .work-swiper .swiper-pagination-bullet {
         width: 6px; height: 6px;
         background: #cbd5e1;

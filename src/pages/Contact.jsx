@@ -150,10 +150,10 @@ const ContactLeft = () => {
             Get in Touch
           </Text>
         </Flex>
-        <Text sx={{ fontFamily: "'Sora', sans-serif", fontWeight: "800", fontSize: "1.55rem", letterSpacing: "-0.02em", color: "#fff", lineHeight: "1.1" }}>
+        <Text sx={{ fontFamily: "'Sora', sans-serif", fontWeight: "700", fontSize: "1.55rem", letterSpacing: "-0.02em", color: "#fff", lineHeight: "1.1" }}>
           Contact Info
         </Text>
-        <Text sx={{ fontFamily: "'Instrument Serif', Georgia, serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.7)", mt: "8px", lineHeight: "1.65" }}>
+        <Text sx={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.7)", mt: "8px", lineHeight: "1.65" }}>
           Always available for freelance work. Feel free to reach out!
         </Text>
       </Box>
@@ -342,7 +342,7 @@ const ContactRight = () => {
               Drop a Message
             </Text>
           </Flex>
-          <Text sx={{ fontFamily: "'Sora', sans-serif", fontWeight: "800", fontSize: "1.55rem", letterSpacing: "-0.02em", color: "#0f172a", lineHeight: "1.1" }}>
+          <Text sx={{ fontFamily: "'Sora', sans-serif", fontWeight: "700", fontSize: "1.55rem", letterSpacing: "-0.02em", color: "#0f172a", lineHeight: "1.1" }}>
             Message Me
           </Text>
         </Box>
@@ -407,6 +407,7 @@ const ContactRight = () => {
 // ── Root export ───────────────────────────────────────────────────────────────
 const Contact = () => (
   <Box
+    id="contact"
     sx={{
       minHeight: "100vh",
       background: "linear-gradient(160deg, #f0f6ff 0%, #fafcff 60%, #eef3ff 100%)",
@@ -416,10 +417,6 @@ const Contact = () => (
       justifyContent: "center",
     }}
   >
-    <style>{`
-      @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Mono:wght@400;500;600&family=Instrument+Serif&display=swap');
-    `}</style>
-
     {/* Section heading */}
     <Box sx={{ textAlign: "center", mb: "48px" }}>
       <Text sx={{ fontFamily: "'DM Mono', monospace", fontSize: "0.7rem", fontWeight: "600", letterSpacing: "0.22em", textTransform: "uppercase", color: "#3b82f6", mb: "8px" }}>

@@ -9,7 +9,7 @@ import {
   HiOutlineCurrencyDollar, HiOutlineCode, HiOutlineLightBulb,
 } from "react-icons/hi";
 
-const phrases = ["Michael Oladimeji", "InsightCracker", "The Thinking Analyst"];
+const phrases = ["Michael Oladimeji", "The Thinking Analyst"];
 
 const socials = [
   { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/in/InsightCracker", label: "LinkedIn" },
@@ -118,14 +118,14 @@ const LandingContent = () => {
       id="home"
       sx={{
         display: "flex",
-        width: "100%",
+        minW: "100%",
         flexDirection: { base: "column", md: "unset" },
         gridTemplateColumns: { base: "1fr", md: "1fr 1fr" },
         gap: "48px",
         alignItems: "center",
         justifyContent: "space-between",
         minHeight: "100vh",
-        padding: { base: "80px 16px 48px", md: "80px 48px 48px" }
+        padding: { base: "100px 0px 48px", md: "80px 48px 48px" }
       }}
     >
 
@@ -163,7 +163,7 @@ const LandingContent = () => {
         {/* Typewriter */}
         <Heading
           sx={{
-            fontSize: { base: "1.3rem", md: "2.2rem" },
+            fontSize: { base: "1.5rem", md: "2.2rem" },
             fontWeight: "700",
             margin: ".4rem 0 .6rem",
             minHeight: "3rem",
@@ -174,7 +174,7 @@ const LandingContent = () => {
           }}
         >
           {typed}
-          <Box
+          {/* <Box
             as="span"
             sx={{
               display: "inline-block",
@@ -185,7 +185,7 @@ const LandingContent = () => {
               marginLeft: "3px",
               animation: "blink 0.8s step-end infinite",
             }}
-          />
+          /> */}
         </Heading>
 
         {/* Subtitle */}
@@ -305,7 +305,7 @@ const LandingContent = () => {
       {/* ── RIGHT — ORBIT ── */}
       <Box
         sx={{
-          display: { base: "none", md: "flex" },
+          display: { base: "none", lg: "flex" },
           justifyContent: "center",
           alignItems: "center",
           opacity: visible ? 1 : 0,
@@ -499,8 +499,8 @@ const LandingContent = () => {
             }}
           >
             Analysing{" "}
-            <Box as="span" sx={{ color: "#3b82f6", fontWeight: "600" }}>data</Box>
-            <Box
+            {/* <Box as="span" sx={{ color: "#3b82f6", fontWeight: "600" }}>data</Box> */}
+            {/* <Box
               as="span"
               sx={{
                 display: "inline-block",
@@ -511,7 +511,7 @@ const LandingContent = () => {
                 verticalAlign: "middle",
                 animation: "blink 0.8s step-end infinite",
               }}
-            />
+            /> */}
           </Box>
 
         </Box>

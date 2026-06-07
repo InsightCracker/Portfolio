@@ -26,7 +26,7 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 
-body {
+/* body {
   background-color: #fff;
   color: #000;
 }
@@ -48,16 +48,14 @@ ul {
   height: 3rem;
   position: absolute;
   z-index: -1;
-}
+} */
 
 .contact, 
 .resume, 
-.portfolio, 
-.product,
-.About, 
+/* .About,  */
 .LandingPage, 
 .navbar {
-  padding: 0 100px;
+  padding: 0 50px;
 }
 
 .swiper {
@@ -65,7 +63,7 @@ ul {
   height: 100%;
 }
 
-.navbar .code {
+/* .navbar .code {
   text-transform: uppercase;
 }
 
@@ -104,19 +102,19 @@ ul {
   margin: 0 3px;
   font-size: 0.9rem;
   border-bottom: 1px solid #fff;
-}
+} */
 
-.extension {
+/* .extension {
   display: none;
-}
+} */
 
-.LandingImage {
+/* .LandingImage {
   position: relative;
   padding: 20px;
   z-index: 0;
-}
+} */
 
-.LandingImage img {
+/* .LandingImage img {
   width: 100%;
 }
 
@@ -445,4 +443,4 @@ ul {
     align-items: flex-start;
   }
 }
-
+ */

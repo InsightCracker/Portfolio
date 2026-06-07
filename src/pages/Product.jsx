@@ -283,7 +283,7 @@ const ContentPanel = () => {
   );
 };
 
-// ── Main export ───────────────────────────────────────────────────────────────
+// ── Main export 
 const DataEreShowcase = () => (
   <Box
     sx={{
@@ -294,10 +294,6 @@ const DataEreShowcase = () => (
       padding: "clamp(50px, 9vw, 90px) clamp(20px, 6vw, 80px)",
     }}
   >
-    <style>{`
-      @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap');
-    `}</style>
-
     <Box
       sx={{
         maxWidth: "1100px",

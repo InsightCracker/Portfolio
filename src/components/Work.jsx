@@ -68,7 +68,7 @@ const Work = () => {
                 border: '1px solid #363636ff',
                 borderTopLeftRadius: '15px',
                 borderBottomRightRadius: '15px',
-                overflow: 'hidden'
+                overflow: 'hidden',
         }}>
                 <Box
                     className="box"
@@ -157,9 +157,9 @@ const Work = () => {
                     </Box>
                     
                     <Text sx={{
-                        lineHeight: '1.1rem',
+                        lineHeight: '1.3rem',
                         fontSize: '.9rem',
-                        color: '#16161680',
+                        color: '#111111',
                         marginBottom: '1rem'
                     }}>
                         I completed a data cleaning project that involved handling missing and invalid values, removing duplicates, and standardizing date formats, resulting in improved data accuracy and reliability for effective analysis.
@@ -185,6 +185,7 @@ const Work = () => {
         <SwiperSlide>
             <Box className="projectbox" sx={{
                 minH: '22rem',
+                height: '100%',
                 bgColor: '#fafafaff',
                 color: '#000',
                 border: '1px solid #363636ff',
@@ -287,9 +288,9 @@ const Work = () => {
                     </Box>
                     
                     <Text sx={{
-                        lineHeight: '1.1rem',
+                        lineHeight: '1.3rem',
                         fontSize: '.9rem',
-                        color: '#16161680',
+                        color: '#111',
                         marginBottom: '1rem'
                         }}>
                             Developed an interactive Power BI dashboard to analyze insurance risk, presenting insights on total policies (50,000), premium ($3,673M), high-risk exposure (52.1%), and risk patterns across age, region, income band, and behavioral factors.
@@ -823,7 +824,7 @@ const Work = () => {
                     </Box>
 
                     <Text sx={{
-                        lineHeight: '1.1rem',
+                        lineHeight: '1.3rem',
                         fontSize: '.9rem',
                         color: '#16161680',
                         marginBottom: '1rem'

@@ -27,15 +27,15 @@ const ProductRightBox = () => {
         flexDir: 'column',
         justifyContent: 'center'
     }} className="ProductRightBox">
-        <ul style={{
+        <p style={{
             marginTop: '.5rem',
-            lineHeight: '1.7rem'
+            lineHeight: '1.7rem',
+            textAlign: 'justify',
+            fontSize: '.9rem'
         }}>
-            <li><span className="icon"><FaCheckCircle /></span> Play Interactive data quizzes and compete globally</li>
-            <li><span className="icon"><FaCheckCircle /></span> Convert PDFs to Excel & CSV in seconds</li>
-            <li><span className="icon"><FaCheckCircle /></span> Generate AI-powered reports and smart insights instantly</li>
-            <li><span className="icon"><FaCheckCircle /></span> Climb the leaderboard and challenge our AI bot</li>
-        </ul>
+            Built DataEre, an AI-powered platform designed to help learners and professionals improve their data analytics skills through interactive challenges, performance tracking, leaderboards, and intelligent automation tools. The platform combines learning, competition, and productivity by offering AI-generated insights, automated reporting, and seamless data extraction from documents.
+
+        </p>
 
         <Box sx={{
           display: 'flex',

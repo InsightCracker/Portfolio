@@ -1,83 +1,112 @@
-import { 
-    Box,
-    Text
-} from "@chakra-ui/react";
-
+import { Box, Text } from "@chakra-ui/react";
+import { useEffect, useRef } from "react";
 
 const ContactLeft = () => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const timer = setTimeout(() => {
+      el.style.opacity = "1";
+      el.style.transform = "translateY(0) scale(1)";
+    }, 200);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const skills = [
+    "Python (Pandas, Scikit-learn)",
+    "JavaScript",
+    "React",
+    "HTML/CSS",
+    "Git & Version Control",
+    "QuickBooks",
+  ];
+
   return (
-    <Box data-aos="fade-right" data-aos-delay='300' sx={{
-        bgColor: '#3b82f6',
-        color: '#fff',
-        padding: '20px 15px 1rem 15px',
-        margin: '.5rem 0',
-        borderTopLeftRadius: '15px',
-        borderBottomRightRadius: '15px'
-    }} className="contactLeftBox">    
-        <Text sx={{
-            fontWeight: '500',
-            fontSize: '1.2rem',
-            marginLeft: '.3rem',
-            marginBottom: '.3rem',
-            display: 'inline'
-        }}>Programming & Tools</Text>
+    <Box
+      ref={ref}
+      className="contactLeftBox"
+      sx={{
+        bgColor: "#3b82f6",
+        color: "#fff",
+        padding: "20px 16px 18px",
+        margin: ".5rem 0",
+        borderTopLeftRadius: "16px",
+        borderBottomRightRadius: "16px",
+        borderTopRightRadius: "4px",
+        borderBottomLeftRadius: "4px",
+        position: "relative",
+        overflow: "hidden",
+        opacity: 0,
+        transform: "translateY(24px) scale(0.97)",
+        transition: "opacity 0.5s ease, transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)",
+        _hover: {
+          transform: "translateY(-4px) scale(1.02)",
+        },
+        _before: {
+          content: '""',
+          position: "absolute",
+          top: 0,
+          left: "-100%",
+          width: "60%",
+          height: "100%",
+          background:
+            "linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent)",
+          transition: "left 0s",
+        },
+        "&:hover::before": {
+          left: "150%",
+          transition: "left 0.6s ease",
+        },
+      }}
+    >
+      <Box
+        as="span"
+        sx={{ fontSize: "22px", display: "block", marginBottom: "10px", opacity: 0.85 }}
+      >
+        💻
+      </Box>
 
-        <Box sx={{
-            margin: '10px 0'
-        }}>
-            <Text sx={{
-                padding: '.3rem .8rem',
-                fontSize: '.8rem',
-                bgColor: '#ccdbf180',
-                color: '#222222ff',
-                display: 'inline-block',
-                borderRadius: '10px',
-                marginRight: '5px',
-                marginBottom: '.5rem'
-            }}>
-                Python (Pandas, Scikit-learn)
-            </Text>
+      <Text
+        sx={{
+          fontWeight: "500",
+          fontSize: "1.2rem",
+          marginBottom: "12px",
+          color: "#fff",
+          lineHeight: "1.3",
+        }}
+      >
+        Programming & Tools
+      </Text>
 
-            <Text sx={{
-                padding: '.3rem .8rem',
-                fontSize: '.8rem',
-                bgColor: '#ccdbf180',
-                color: '#222222ff',
-                display: 'inline-block',
-                borderRadius: '10px',
-                marginRight: '5px',
-                marginBottom: '.5rem'
-            }}>
-                JavaScript, React, HTML/CSS
-            </Text>
-
-            <Text sx={{
-                padding: '.3rem .8rem',
-                fontSize: '.8rem',
-                bgColor: '#ccdbf180',
-                color: '#222222ff',
-                display: 'inline-block',
-                borderRadius: '10px',
-                marginRight: '5px',
-                marginBottom: '.5rem'
-            }}>
-                Git & Version Control
-            </Text>
-
-            <Text sx={{
-                padding: '.3rem .8rem',
-                fontSize: '.8rem',
-                bgColor: '#ccdbf180',
-                color: '#222222ff',
-                display: 'inline-block',
-                borderRadius: '10px',
-                marginRight: '5px'
-            }}>
-                QuickBooks
-            </Text>
-        </Box>
+      <Box sx={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+        {skills.map((skill) => (
+          <Text
+            key={skill}
+            sx={{
+              padding: "3px 10px",
+              fontSize: ".9rem",
+              bgColor: "rgba(255,255,255,0.2)",
+              color: "#fff",
+              display: "inline-block",
+              borderRadius: "20px",
+              cursor: "default",
+              transition:
+                "transform 0.2s cubic-bezier(0.34,1.56,0.64,1), background 0.2s, color 0.2s",
+              _hover: {
+                bgColor: "rgba(255,255,255,0.95)",
+                color: "#1d4ed8",
+                transform: "scale(1.1)",
+              },
+            }}
+          >
+            {skill}
+          </Text>
+        ))}
+      </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default ContactLeft
+export default ContactLeft;

@@ -1,7 +1,7 @@
 import { 
   Box
 } from "@chakra-ui/react";
-import Pic from "../assets/image/fgg.png"; 
+import Pic from "../assets/image/fgg.jpg"; 
 
 const LandingImage = () => {
   return (

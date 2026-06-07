@@ -106,7 +106,7 @@ const LandingContent = () => {
             bgColor={"#3b82f6"} 
             border={"1px solid #3b82f6"}
             sx={buttonStyle}
-          >Explore DataXO</Text>
+          >Explore DataEre</Text>
           </a>
         </Box>
     </Box>

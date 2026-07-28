@@ -25,7 +25,6 @@ const IconDownload = () => (
   </svg>
 );
 
-// ── Nav links ─────────────────────────────────────────────────────────────────
 const LINKS = [
   { label: "Home",     href: "#home"      },
   { label: "About",    href: "#about"     },
@@ -34,7 +33,6 @@ const LINKS = [
   { label: "Contact",  href: "#contact"   },
 ];
 
-// ── Desktop Nav Link ──────────────────────────────────────────────────────────
 const DesktopLink = ({ label, href, active }) => {
   const [hov, setHov] = useState(false);
   const lit = active || hov;
@@ -74,7 +72,6 @@ const DesktopLink = ({ label, href, active }) => {
   );
 };
 
-// ── Mobile Nav Link ───────────────────────────────────────────────────────────
 const MobileLink = ({ label, href, index, onClick }) => {
   const [hov, setHov] = useState(false);
   const ref = useRef(null);
@@ -125,7 +122,6 @@ const MobileLink = ({ label, href, index, onClick }) => {
   );
 };
 
-// ── Navbar ────────────────────────────────────────────────────────────────────
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled]   = useState(false);

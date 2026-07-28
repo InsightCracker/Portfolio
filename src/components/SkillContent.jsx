@@ -168,7 +168,6 @@ const SkillCard = ({ card }) => {
             ? "translateY(-6px) scale(1.025)"
             : "translateY(0) scale(1)",
           cursor: "default",
-          // animated border glow
           _after: isBlue ? {} : {
             content: '""',
             position: "absolute",

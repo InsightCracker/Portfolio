@@ -178,7 +178,6 @@ const ContactLeft = () => {
   );
 };
 
-// ── Floating label field ──────────────────────────────────────────────────────
 const Field = ({ label, type = "text", value, onChange, multiline, placeholder }) => {
   const [focused, setFocused] = useState(false);
   const hasValue = value.length > 0;
@@ -237,7 +236,6 @@ const Field = ({ label, type = "text", value, onChange, multiline, placeholder }
   );
 };
 
-// ── Toast Notification ────────────────────────────────────────────────────────
 const Toast = ({ msg, show }) => {
   const isSuccess = msg.includes("successfully");
   return (
@@ -272,7 +270,7 @@ const Toast = ({ msg, show }) => {
   );
 };
 
-// ── Right Panel (Form) ────────────────────────────────────────────────────────
+
 const ContactRight = () => {
   const [name, setName]       = useState("");
   const [email, setEmail]     = useState("");
@@ -404,7 +402,6 @@ const ContactRight = () => {
   );
 };
 
-// ── Root export ───────────────────────────────────────────────────────────────
 const Contact = () => (
   <Box
     id="contact"

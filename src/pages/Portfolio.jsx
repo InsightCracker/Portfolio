@@ -12,7 +12,6 @@ const Portfolio = () => (
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      // padding: { base: "80px 20px 60px", md: "90px 48px 60px" },
     }}
   >
     <Box sx={{ width: "100%" }}>

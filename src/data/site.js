@@ -248,31 +248,31 @@ export const projects = [
 export const clientWork = [
   {
     id: "ngo-1",
-    visible: false, // TODO: set to true after filling this in and getting the client's OK
-    title: "First NGO website (name)",
-    summary: "What the organisation needed, in one sentence.",
-    built: "What you built: the main features.",
-    stack: ["React"],
+    visible: true, // Set to true after receiving the client's approval
+    title: "Greenway Pathways Foundation",
+    summary: "The organisation needed a professional online presence to communicate its mission, showcase its initiatives, engage supporters, and encourage community participation.",
+    built: "",
+    stack: ["React", "JavaScript", "Mongo DB", "Node Js"],
     role: "Sole developer",
-    result: "",
-    url: "https://",
+    result: "Delivered a functional, responsive digital platform that gives the foundation a central online presence for sharing its work and engaging potential volunteers and supporters.",
+    url: "https://www.greenwaypathwaysfoundation.com/",
     image: null,
-    alt: "",
+    alt: "Greenway Pathways Foundation"
   },
   {
     id: "ngo-2",
-    visible: false, // TODO: set to true after filling this in and getting the client's OK
-    title: "Second NGO website (name)",
-    summary: "What the organisation needed, in one sentence.",
-    built: "What you built: the main features.",
-    stack: ["React"],
+    visible: true, // Set to true after receiving the client's approval
+    title: "Springswone Foundation for the Homeless",
+    summary: "The organisation needed a professional digital presence to communicate its mission, showcase its community initiatives, share updates, and make it easier for supporters to engage with its work.",
+    built: "",
+    stack: ["React", "JavaScript", "Mongo DB", "Node JS"],
     role: "Sole developer",
-    result: "",
-    url: "https://",
+    result: "Delivered a complete NGO web platform combining a public-facing website with an administrative content management system, enabling the organisation to maintain its online presence and manage website updates.",
+    url: "https://www.springswonefoundation.org/",
     image: null,
-    alt: "",
+    alt: "Springswone Foundation"
   },
-];
+ ];
 
 // Client offers. `title` also fills the topic list in the contact form.
 export const services = [

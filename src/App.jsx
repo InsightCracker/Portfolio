@@ -1,33 +1,32 @@
-import '../css/style.css';
-import { Box } from '@chakra-ui/react';
-import aos from 'aos';
-import 'aos/dist/aos.css';
-import Navbar from './util/Navbar';
-import LandingPage from './pages/LandingPage';
-import About from './pages/About';
-import Portfolio from './pages/Portfolio';
-import Product from './pages/Product';
-import Contact from './pages/Contact';
-import SkillContent from './pages/Skillls';
-import Footer from './util/Footer';
+import { useState } from "react";
+import Nav from "./components/Nav.jsx";
+import Hero from "./components/Hero.jsx";
+import About from "./components/About.jsx";
+import Skills from "./components/Skills.jsx";
+import Work from "./components/Work.jsx";
+import Services from "./components/Services.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
-function App() {
-  aos.init({
-    duration: 800
-  })
+export default function App() {
+  // The service picked in the Services list pre-fills the topic in the contact form.
+  const [service, setService] = useState("");
+
   return (
-      <div className="App">
-        {/* <Sections /> */}
-        <Navbar />
-        <LandingPage />
+    <>
+      <a className="skip" href="#main">
+        Skip to content
+      </a>
+      <Nav />
+      <main id="main">
+        <Hero />
         <About />
-        <SkillContent />
-        <Portfolio />
-        <Product />
-        <Contact />
-        <Footer />
-    </div>
-  )
+        <Skills />
+        <Work />
+        <Services onSelect={setService} />
+        <Contact service={service} onServiceChange={setService} />
+      </main>
+      <Footer />
+    </>
+  );
 }
-
-export default App

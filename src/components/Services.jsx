@@ -6,7 +6,7 @@ export default function Services({ onSelect }) {
     <Section
       id="services"
       title="Services"
-      intro={`Ways I can help, under the ${site.brand} name.`}
+      intro={`Ways I can help.`}
       wide
     >
       <ul className="svc-list">

@@ -213,7 +213,7 @@ export const projects = [
     result: "",
     // TODO: the old site linked this card to the Ballon d'Or repo by mistake.
     // Paste the correct Pharmacy Pulse repo URL here, or leave it null to hide the link.
-    repo: null,
+    repo: "https://github.com/InsightCracker/Pharmacy-Pulse-Dashboard",
   },
   {
     id: "usdebt",

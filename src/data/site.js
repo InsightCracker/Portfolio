@@ -41,7 +41,7 @@ export const nav = [
 
 export const hero = {
   lede: "I turn financial data into decisions, and build the web and AI tools that do it faster.",
-  status: "Accountant, data analyst and web developer in Lagos. Open to roles and freelance projects.",
+  status: "Finance, data analyst and web developer in Lagos. Open to roles and freelance projects.",
 };
 
 // The hero "T-account". Each side lists what sits on that side of the ledger.
@@ -50,7 +50,7 @@ export const ledger = {
   debit: {
     side: "Dr",
     title: "Accounting",
-    items: ["Financial reporting", "Reconciliation", "IFRS documentation", "Budgeting"],
+    items: ["Financial reporting", "Reconciliation", "Auditing", "Budgeting"],
   },
   credit: {
     side: "Cr",
@@ -63,8 +63,9 @@ export const ledger = {
 export const about = {
   lead: "I'm an accounting graduate working where finance meets data.",
   body: [
-    "I handle financial reporting, reconciliation and IFRS-aligned documentation, analyze it with SQL, Power BI and Python, and build tools with React and AI, most visibly DataEre.",
-    "I also teach Data Analytics at Codar Tech Africa, and I'm building my skills in AI-driven financial modeling for fraud detection, risk and forecasting.",
+    "I work across finance, data analytics and web development, combining my accounting background with tools such as SQL, Power BI and Python to transform financial data into meaningful insights. I also build digital solutions using React and AI, including DataEre, my data analytics learning platform.",
+
+    "I teach Data Analytics and continue to develop my expertise in AI-driven financial modelling, with a focus on fraud detection, risk assessment and financial forecasting",
   ],
 };
 
@@ -73,8 +74,15 @@ export const background = [
   {
     visible: true,
     period: "Now",
+    title: "Audit Associate",
+    org: "AO Professional Services",
+    note: "",
+  },
+  {
+    visible: true,
+    period: "Now",
     title: "Data Analytics instructor",
-    org: "Codar Tech Africa",
+    org: "Freelancing",
     note: "",
   },
   {

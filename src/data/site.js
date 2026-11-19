@@ -27,7 +27,6 @@ export const socials = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/InsightCracker" },
   { label: "GitHub", href: "https://github.com/InsightCracker" },
   { label: "X", href: "https://x.com/InsightCracker" },
-  { label: "Instagram", href: "https://www.instagram.com/mightymykel" },
   { label: "WhatsApp", href: "https://wa.me/2349036190420" },
 ];
 

@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="foot">
       <div className="wrap foot__inner">
         <p>
-          © {site.year} {site.name}. Freelance work is done under {site.brand}.
+          © {site.year} {site.name}.
         </p>
         <ul className="foot__links">
           {socials.map((s) => (

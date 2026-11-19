@@ -211,8 +211,6 @@ export const projects = [
     description:
       "Analyzed revenue, cost, profit, sales volume and regional performance of a European pharmacy chain to find key trends and the strongest and weakest areas.",
     result: "",
-    // TODO: the old site linked this card to the Ballon d'Or repo by mistake.
-    // Paste the correct Pharmacy Pulse repo URL here, or leave it null to hide the link.
     repo: "https://github.com/InsightCracker/Pharmacy-Pulse-Dashboard",
   },
   {
@@ -241,13 +239,10 @@ export const projects = [
   },
 ];
 
-// Websites you built for clients. Nothing here shows on the site until `visible` is true.
-// To add a screenshot: put a .webp in src/assets, import it at the top, and set
-// image: { src: yourImport, width: 1200, height: 750 }.
 export const clientWork = [
   {
     id: "ngo-1",
-    visible: true, // Set to true after receiving the client's approval
+    visible: true,
     title: "Greenway Pathways Foundation",
     summary: "The organisation needed a professional online presence to communicate its mission, showcase its initiatives, engage supporters, and encourage community participation.",
     built: "",
